@@ -1,0 +1,34 @@
+# This file is auto-generated during the composer install
+parameters:
+    default.database.driver: pdo_mysql
+    default.database.host: localhost
+    default.database.name: sniffle_gzilt
+    default.database.user: dbuser
+    default.database.password: same2you
+    audit.database.driver: pdo_mysql
+    audit.database.host: localhost
+    audit.database.name: sniffle_gzilt_audit
+    audit.database.user: dbuser
+    audit.database.password: same2you
+    timeline.database.password: same2you
+    timeline.database.driver: pdo_mysql
+    timeline.database.host: localhost
+    timeline.database.name: sniffle_gzilt_timeline
+    timeline.database.user: dbuser
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: ThisTokenIsNotSoSecretChangeIt
+    sonata_admin.title: 'Sonata Project'
+    sonata_admin.logo_title: /bundles/sonataadmin/logo_title.png
+    sonata_media.cdn.host: 'http://demo.sonata-project.org/uploads/media'
+    sonata_user.google_authenticator.server: demo.sonata-project.org
+    rabbitmq_host: 127.0.0.1
+    rabbitmq_user: user
+    rabbitmq_pass: pass
+    rabbitmq_port: 5672
+    rabbitmq_vhost: /
+    memcache_host: localhost
+    memcache_port: 11211

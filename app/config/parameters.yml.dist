@@ -1,0 +1,45 @@
+parameters:
+
+    default.database.driver: pdo_mysql
+    default.database.host: localhost
+    default.database.name: sonata_sandbox
+    default.database.user: dbuser
+    default.database.password: same2you
+    audit.database.driver: pdo_mysql
+    audit.database.host: localhost
+    audit.database.name: sonata_sandbox_audit
+    audit.database.user: dbuser
+    audit.database.password: same2you
+    timeline.database.driver: pdo_mysql
+    timeline.database.host: localhost
+    timeline.database.name: sonata_sandbox_timeline
+    timeline.database.user: dbuser
+    timeline.database.password: same2you
+
+    mailer_transport:   smtp
+    mailer_host:        localhost
+    mailer_user:
+    mailer_password:
+
+    locale:             en
+
+    secret:             ThisTokenIsNotSoSecretChangeIt
+
+    # Sonata Admin Options
+    sonata_admin.title:             Sonata Project
+    sonata_admin.logo_title:        /bundles/sonataadmin/logo_title.png
+
+    # Sonata Media options
+    sonata_media.cdn.host:          http://demo.sonata-project.org/uploads/media
+
+    # Sonata User Options
+    sonata_user.google_authenticator.server:  demo.sonata-project.org
+
+    rabbitmq_host: 127.0.0.1
+    rabbitmq_user: user
+    rabbitmq_pass: pass
+    rabbitmq_port: 5672
+    rabbitmq_vhost: /
+
+    memcache_host: localhost
+    memcache_port: 11211
