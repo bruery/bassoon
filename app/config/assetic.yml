@@ -1,0 +1,151 @@
+assetic:
+    debug:          false # %kernel.debug%
+    use_controller: false
+    read_from:      %kernel.root_dir%/../web
+    write_to:       %kernel.root_dir%/../web
+    bundles:        [] # disable bundles parsing
+
+    filters:
+        cssrewrite: ~
+        yui_js:  { jar: "%kernel.root_dir%/../bin/yuicompressor.jar" }
+        yui_css: { jar: "%kernel.root_dir%/../bin/yuicompressor.jar" }
+
+    assets:
+        # see https://sonata-project.org/blog/2012/5/15/assetic-package-configuration
+        #
+        sonata_jqueryui_js:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.core.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.widget.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.mouse.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.draggable.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.droppable.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.resizable.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.selectable.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.sortable.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.effect.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.position.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/ui/jquery.ui.tooltip.js
+
+            filters:
+                - yui_js
+
+        sonata_jqueryui_css:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+
+            filters:
+                - cssrewrite
+                - yui_css
+
+        sonata_formatter_js:
+            inputs:
+                # do not uncomment this, ckeditor behave badly when compacted...
+                #- %kernel.root_dir%/../web/bundles/sonataformatter/vendor/ckeditor/ckeditor.js
+                - %kernel.root_dir%/../web/bundles/sonataformatter/vendor/markitup-markitup/markitup/jquery.markitup.js
+                - %kernel.root_dir%/../web/bundles/sonataformatter/markitup/sets/markdown/set.js
+                - %kernel.root_dir%/../web/bundles/sonataformatter/markitup/sets/html/set.js
+                - %kernel.root_dir%/../web/bundles/sonataformatter/markitup/sets/textile/set.js
+
+            filters:
+                - yui_js
+
+        sonata_formatter_css:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/sonataformatter/markitup/skins/sonata/style.css
+                - %kernel.root_dir%/../web/bundles/sonataformatter/markitup/sets/markdown/style.css
+                - %kernel.root_dir%/../web/bundles/sonataformatter/markitup/sets/html/style.css
+                - %kernel.root_dir%/../web/bundles/sonataformatter/markitup/sets/textile/style.css
+
+            filters:
+                - cssrewrite
+                - yui_css
+
+        sonata_admin_js:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/jquery/dist/jquery.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.js
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/moment/min/moment.min.js
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.js
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/jquery/jquery.confirmExit.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/select2/select2.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/footable-bootstrap/js/footable-app.min.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/responsive-mobilemenu/rmm-js/responsivemobilemenu.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/auxiliary-rpage/responsive-paginate.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/iCheck/icheck.min.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+                - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/blockui/js/jquery.blockUI.js
+                - %kernel.root_dir%/../web/bundles/brueryadmin/Admin.js
+                - %kernel.root_dir%/../web/bundles/sonataadmin/treeview.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/tabdrop/js/bootstrap-tabdrop.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/bootstrap-fileinput/js/plugins/canvas-to-blob.min.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/bootstrap-fileinput/js/fileinput.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/js/core-ajax.js
+            filters:
+                - yui_js
+
+        sonata_admin_css:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.css
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+                - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/jqueryui/themes/bootstrap/jquery-ui-1.10.3.custom.css
+                - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/jqueryui/themes/bootstrap/jquery-ui-1.10.3.theme.css
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/select2/select2.css
+                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+                - %kernel.root_dir%/../web/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+                - %kernel.root_dir%/../web/bundles/brueryadmin/css/styles.css
+                - %kernel.root_dir%/../web/bundles/sonataadmin/css/layout.css
+                - %kernel.root_dir%/../web/bundles/sonataadmin/css/tree.css
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/footable-bootstrap/css/footable.bootstrap.css
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/responsive-mobilemenu/rmm-css/responsivemobilemenu.css
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/tabdrop/css/tabdrop.css
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/bootstrap-fileinput/css/fileinput.min.css
+                - %kernel.root_dir%/../web/bundles/brueryadmin/css/theme/bruery/style.css
+                - %kernel.root_dir%/../web/bundles/brueryadmin/css/theme/bruery/themes.css
+                - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/blockui/css/jquery.blockUI.css
+
+            filters:
+                - cssrewrite
+                - yui_css
+
+        admin_graph_css:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/c3/c3.min.css
+            filters:
+                - cssrewrite
+                - yui_css
+
+        admin_dashboard_block_css:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/brueryblock/css/block-grihub-rss.css
+            filters:
+                - cssrewrite
+                - yui_css
+
+
+        admin_graph_js:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/d3/d3.min.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/c3/c3.min.js
+                - %kernel.root_dir%/../web/bundles/bruerycore/vendor/sparkline/jquery.sparkline.min.js
+            filters:
+                - yui_js
+
+        admin_dashboard_block_js:
+            inputs:
+                - %kernel.root_dir%/../web/bundles/brueryuser/js/block/user-authentication-logs.js
+                - %kernel.root_dir%/../web/bundles/brueryuser/js/block/user-gender.js
+                - %kernel.root_dir%/../web/bundles/brueryuser/js/block/user-age-demographics.js
+                - %kernel.root_dir%/../web/bundles/brueryblock/js/github-rss.js
+
+            filters:
+                - yui_js

@@ -1,0 +1,22 @@
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+#
+# Support for LiipImagineBundle
+#_liip_imagine:
+#    resource: "@LiipImagineBundle/Resources/config/routing.xml"
+
+_front:
+    resource: routing_front.yml
+
+_admin:
+    resource: routing_admin.yml
+    prefix:   /admin
+
+_api:
+    resource: routing_api.yml
+    prefix:   /api
+
+
+

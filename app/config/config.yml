@@ -1,0 +1,177 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: assetic.yml }
+
+    # Mopa Bootstrap
+    - { resource: mopa/mopa_bootstrap.yml }
+
+    # Knp Paginator
+    - { resource: knp/knp_paginator.yml }
+
+    # FriendOfSymfony Bundles
+    - { resource: fos/fos_rest.yml }
+    - { resource: fos/fos_user.yml }
+
+    # mysql func extension
+    - { resource: beberlei/mysql.yml }
+
+    #- { resource: bazinga/bazinga_hateos.yml }
+
+    # SimpleThings Enity Audit
+    - { resource: simplethings/simplethings_entity_audit.yml }
+
+    # Sonata Core Bundles
+    - { resource: sonata/sonata_block.yml }
+    - { resource: sonata/sonata_formatter.yml }
+    - { resource: sonata/sonata_timeline.yml }
+    - { resource: sonata/sonata_intl.yml }
+    - { resource: sonata/sonata_core.yml }
+
+    # Sonata Feature Bundles
+    - { resource: sonata/sonata_admin.yml }
+    - { resource: sonata/sonata_media.yml }
+    - { resource: sonata/sonata_user.yml }
+    - { resource: sonata/sonata_classification.yml }
+
+
+framework:
+    #esi:                   ~
+    translator:             { fallbacks: ["%locale%"] }
+    secret:                 "%secret%"
+    router:
+        resource:           "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    form:                    ~
+    csrf_protection:         ~
+    validation:
+       enable_annotations: true
+       enabled: true
+       api: 2.5
+    templating:
+        engines:             ['twig']
+        #assets_version:      SomeVersionScheme
+
+    default_locale:          "%locale%"
+    session:
+        handler_id:          ~
+        save_path:           %kernel.root_dir%/cache/sessions
+
+    fragments:               ~
+    trusted_proxies:         ~
+    http_method_override:    true
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
+
+    #base_template_class: Sonata\CacheBundle\Twig\TwigTemplate14
+
+    form:
+        resources:
+            - 'BrueryAdminBundle:Form:form_admin_fields.html.twig'
+            - 'BrueryFormatterBundle:Form:formatter.html.twig'
+            - 'SonataMediaBundle:Form:media_widgets.html.twig'
+            - 'SonataCoreBundle:Form:datepicker.html.twig'
+
+    exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        default_connection: default
+
+        connections:
+            default:
+                driver:   "%default.database.driver%"
+                dbname:   "%default.database.name%"
+                user:     "%default.database.user%"
+                host:     "%default.database.host%"
+                password: "%default.database.password%"
+                charset:  UTF8
+            audit:
+                driver:   "%audit.database.driver%"
+                dbname:   "%audit.database.name%"
+                user:     "%audit.database.user%"
+                host:     "%audit.database.host%"
+                password: "%audit.database.password%"
+                charset:  UTF8
+            timeline:
+                driver:   "%timeline.database.driver%"
+                dbname:   "%timeline.database.name%"
+                user:     "%timeline.database.user%"
+                host:     "%timeline.database.host%"
+                password: "%timeline.database.password%"
+                charset:  UTF8
+        types:
+            json:     Sonata\Doctrine\Types\JsonType
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+#        naming_strategy:             doctrine.orm.naming_strategy.underscore
+#        auto_mapping:                true
+
+        entity_managers:
+            default:
+                connection: default
+#                auto_mapping: true
+#                mappings: ~
+                mappings:
+                    AppBundle: ~
+            audit:
+                connection: audit
+                mappings:
+                  SimpleThingsEntityAuditBundle: ~
+
+            timeline:
+                connection: timeline
+                mappings: ~
+
+#doctrine_mongodb:
+#    connections:
+#        default:
+#            server: mongodb://localhost:27017
+#            options: {}
+#    default_database: test_database
+#    document_managers:
+#        default:
+#            auto_mapping: true
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: "%mailer_transport%"
+    #host:      "%mailer_host%"
+    username:  "%mailer_user%"
+    password:  "%mailer_password%"
+
+jms_serializer:
+    metadata:
+        #debug: true
+        directories:
+            - { path: %kernel.root_dir%/../vendor/rmzamora/user-bundle/Resources/config/serializer/FOSUserBundle, namespace_prefix: 'FOS\UserBundle' }
+            - { path: %kernel.root_dir%/../vendor/rmzamora/datagrid-bundle/Resources/config/serializer, namespace_prefix: 'Sonata\DatagridBundle' }
+
+# Assetic Configuration
+#assetic:
+#    debug:          %kernel.debug%
+#    use_controller: false
+#    filters:
+#        cssrewrite: ~
+#        # closure:
+#        #     jar: %kernel.root_dir%/java/compiler.jar
+#        # yui_css:
+#        #     jar: %kernel.root_dir%/java/yuicompressor-2.4.2.jar
+#
+#        # Comment out those lines if you wish to use the less version of bootstrap
+#        less:
+#            node: /usr/local/bin/node
+#            node_paths: [/usr/local/node/node-v0.10.22/lib/node_modules]
+#            apply_to: "\.less$"
+
+nelmio_api_doc: ~
+
+sensio_framework_extra:
+    view:    { annotations: false }
+    router:  { annotations: true }
+    request: { converters:  true }

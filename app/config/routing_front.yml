@@ -1,0 +1,22 @@
+sonata_user_security:
+    resource: "@BrueryUserBundle/Resources/config/routing/security.xml"
+
+sonata_user_resetting:
+    resource: "@BrueryUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+sonata_user_profile:
+    resource: "@BrueryUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+sonata_user_register:
+    resource: "@BrueryUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+sonata_user_change_password:
+    resource: "@BrueryUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /profile
+
+sonata_media_media:
+    resource: '@SonataMediaBundle/Resources/config/routing/media.xml'
+    prefix: /media

@@ -1,0 +1,102 @@
+##############################################################################
+# Sonata Classification
+##############################################################################
+sonata_classification:
+    class:
+        tag:            AppBundle\Entity\Classification\Tag
+        category:       AppBundle\Entity\Classification\Category
+        context:        AppBundle\Entity\Classification\Context
+        collection:     AppBundle\Entity\Classification\Collection
+        media:          AppBundle\Entity\Media\Media
+
+    admin:
+        tag:
+            class:      AppBundle\Admin\Classification\TagAdmin
+            controller: BrueryClassificationBundle:TagAdmin
+        category:
+            class:      AppBundle\Admin\Classification\CategoryAdmin
+            controller: BrueryClassificationBundle:CategoryAdmin
+        context:
+            class:      AppBundle\Admin\Classification\ContextAdmin
+        collection:
+            class:      AppBundle\Admin\Classification\CollectionAdmin
+            controller: BrueryClassificationBundle:CollectionAdmin
+
+##############################################################################
+# BrueryClassification
+##############################################################################
+bruery_classification:
+  manager_class:
+    orm:
+      tag:        'Bruery\ClassificationBundle\Entity\TagManager'
+      category:   'Bruery\ClassificationBundle\Entity\CategoryManager'
+      collection: 'Bruery\ClassificationBundle\Entity\CollectionManager'
+      context:    'Bruery\ClassificationBundle\Entity\ContextManager'
+
+  #=====================================================================
+  # Bundle Default Settings
+  #=====================================================================
+  settings:
+    category:
+      default_context: 'news' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
+    collection:
+      default_context: 'news' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
+    tag:
+      default_context: 'news' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
+
+  #=====================================================================
+  # PROVIDERS Configuration
+  #   provider are classes that allows programatically adding
+  #   new fields on the classification modules
+  #=====================================================================
+  providers:
+    #----------------------------------------------------------------------------------------
+    # Providers and Pool class override - SAMPLE with default classes
+    #----------------------------------------------------------------------------------------
+    #class:
+    #  pool:
+    #    category:    'Bruery\ClassificationBundle\Provider\Category\Pool'
+    #    collection:  'Bruery\ClassificationBundle\Provider\Collection\Pool'
+    #    tag:         'Bruery\ClassificationBundle\Provider\Tag\Pool'
+    #  default_provider:
+    #    category:    'Bruery\ClassificationBundle\Provider\Category\DefaultProvider'
+    #    collection:  'Bruery\ClassificationBundle\Provider\Collection\DefaultProvider'
+    #    tag:         'Bruery\ClassificationBundle\Provider\Tag\DefaultProvider'
+
+    #----------------------------------------------------------
+    # Category Provider
+    #----------------------------------------------------------
+    category:
+      context:
+          default:  # the default context optional
+              provider: bruery.classification.category.provider.default
+
+    #----------------------------------------------------------
+    # Category Provider
+    #----------------------------------------------------------
+    collection:
+      context:
+          default:  # the default context optional
+              provider: bruery.classification.collection.provider.default
+          # USER DEMOGRAPHICS FROM BrueryUserBundle
+          user-age-demographics:
+              provider: bruery.user.provider.collection.age_demographics
+
+    #----------------------------------------------------------
+    # Category Provider
+    #----------------------------------------------------------
+    tag:
+      context:
+          default:  # the default context optional
+              provider: bruery.classification.tag.provider.default
+
+##############################################################################
+# Classification Doctrine
+##############################################################################
+doctrine:
+    orm:
+        entity_managers:
+            default:
+                mappings:
+                    SonataClassificationBundle: ~
+                    BrueryClassificationBundle: ~

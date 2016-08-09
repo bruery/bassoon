@@ -1,0 +1,294 @@
+##############################################################################
+# Sonata Admin
+#   more information can be found here https://sonata-project.org/bundles/admin
+##############################################################################
+sonata_admin:
+    # default value, change it to sonata.admin.security.handler.acl to use ACL
+    security:
+        handler: sonata.admin.security.handler.acl
+        # acl security information
+        information:
+            GUEST:    [VIEW, LIST]
+            STAFF:    [EDIT, LIST, CREATE]
+            EDITOR:   [OPERATOR, EXPORT]
+            ADMIN:    [MASTER]
+        # permissions not related to an object instance and also to be available when objects do not exist
+        # the DELETE admin permission means the user is allowed to batch delete objects
+        admin_permissions: [CREATE, LIST, DELETE, UNDELETE, EXPORT, OPERATOR, MASTER]
+        # permission related to the objects
+        object_permissions: [VIEW, EDIT, DELETE, UNDELETE, OPERATOR, MASTER, OWNER]
+
+    title:      %sonata_admin.title%
+    title_logo: %sonata_admin.logo_title%
+    options:
+        html5_validate: false # does not use html5 validation
+        pager_links:    5        # pager max links to display
+        use_bootlint:   %kernel.debug%
+        use_select2:    true
+        use_icheck:     true
+        use_stickyforms:      true
+
+    dashboard:
+        blocks:
+            -
+                class:    col-lg-3 col-xs-3
+                position: top
+                type:     bruery.user.block.user_authentication_logs_stats
+                settings:
+                    icon:  fa-users
+                    text:  block_user_authentication_logs_stats_title
+                    color: bg-aqua
+            -
+                class:    col-lg-12 col-xs-12
+                position: top
+                type:     sonata.block.service.text
+                roles:    [ROLE_SUPER_ADMIN]
+                settings:
+                    template: 'BrueryBlockBundle:Block:block_dashboard_text.html.twig'
+                    content:  'Welcome to Montage Admin! Montage is an open source content management platform based on Sonata Project!'
+#            -
+#                class:    col-lg-6 col-xs-6
+#                position: top
+#                type:     sonata.admin.block.stats
+#                settings:
+#                    code: sonata.news.admin.comment
+#                    icon: fa-comments
+#                    text: Open Comment
+#                    filters:
+#                        status: { type: 3, value: 0 } # 3 => NumberType::TYPE_EQUAL
+            - { position: left,   type: bruery.user.block.user_authentication_logs, settings: { title: block_title_user_authentication_logs }}
+            - { position: left, type: bruery.block.service.github_rss, settings: { title: block_title_github_rss, url: https://github.com/organizations/brueryproject/rmzamora.private.atom?token=AAVXu0IQNmkaG91564ZaqmBTFL8Wii2tks61qryhwA== , template: BrueryBlockBundle:Block:block_github_rss_dashboard.html.twig, number: 5 }}
+            - { position: center,   type: bruery.user.block.profile_gender, settings: { title: block_title_profile_gender }}
+            - { position: right, type: bruery.user.block.profile_age_demographics, settings: { title: block_title_user_age_demographics }}
+            - { position: right, type: sonata.timeline.block.timeline, settings: { context: SONATA_ADMIN, max_per_page: 10, paginate: true, template: 'BrueryTimelineBundle:Block:timeline.html.twig' }}
+
+        groups:
+            sonata.admin.group.classification:
+                label:           sonata_classification
+                label_catalogue: SonataClassificationBundle
+                icon:            '<i class="fa fa-tags"></i>'
+                items:
+                    - sonata.classification.admin.category
+                    - sonata.classification.admin.tag
+                    - sonata.classification.admin.collection
+                    - sonata.classification.admin.context
+
+            sonata.admin.group.administration:
+                label:           sonata_administration
+                label_catalogue: SonataAdminBundle
+                icon:            '<i class="fa fa-cogs"></i>'
+                items:
+                    - sonata.media.admin.media
+                    - sonata.media.admin.gallery
+                    - sonata.user.admin.user
+                    - sonata.user.admin.group
+
+            sonata.admin.group.timeline:
+                label: main_menu_timeline
+                label_catalogue: SonataTimelineBundle
+                icon:  '<i class="fa fa-fw fa-clock-o"></i>'
+                items:
+                    - { label: 'Timeline', route: 'admin_app_timeline_timeline_timeline', admin: 'bruery.timeline.admin.timeline'}
+
+    templates:
+        user_block:                   'SonataUserBundle:Admin\Core:user_block.html.twig'
+        add_block:                    'SonataAdminBundle:Core:add_block.html.twig'
+        layout:                       'BrueryAdminBundle::standard_layout.html.twig'
+        ajax:                         'SonataAdminBundle::ajax_layout.html.twig'
+        dashboard:                    'SonataAdminBundle:Core:dashboard.html.twig'
+        search:                       'SonataAdminBundle:Core:search.html.twig'
+        list:                         'BrueryAdminBundle:CRUD:list.html.twig'
+        filter:                       'SonataAdminBundle:Form:filter_admin_fields.html.twig'
+        show:                         'SonataAdminBundle:CRUD:show.html.twig'
+        show_compare:                 'SonataAdminBundle:CRUD:show_compare.html.twig'
+        edit:                         'BrueryAdminBundle:CRUD:edit.html.twig'
+        preview:                      'SonataAdminBundle:CRUD:preview.html.twig'
+        history:                      'SonataAdminBundle:CRUD:history.html.twig'
+        acl:                          'SonataAdminBundle:CRUD:acl.html.twig'
+        history_revision_timestamp:   'SonataAdminBundle:CRUD:history_revision_timestamp.html.twig'
+        action:                       'SonataAdminBundle:CRUD:action.html.twig'
+        select:                       'BrueryAdminBundle:CRUD:list__select.html.twig'
+        list_block:                   'SonataAdminBundle:Block:block_admin_list.html.twig'
+        search_result_block:          'SonataAdminBundle:Block:block_search_result.html.twig'
+        short_object_description:     'SonataAdminBundle:Helper:short-object-description.html.twig'
+        delete:                       'SonataAdminBundle:CRUD:delete.html.twig'
+        batch:                        'BrueryAdminBundle:CRUD:list__batch.html.twig'
+        batch_confirmation:           'SonataAdminBundle:CRUD:batch_confirmation.html.twig'
+        inner_list_row:               'SonataAdminBundle:CRUD:list_inner_row.html.twig'
+        outer_list_rows_mosaic:       'BrueryAdminBundle:CRUD:list_outer_rows_mosaic.html.twig'
+        outer_list_rows_list:         'SonataAdminBundle:CRUD:list_outer_rows_list.html.twig'
+        outer_list_rows_tree:         'SonataAdminBundle:CRUD:list_outer_rows_tree.html.twig'
+        base_list_field:              'BrueryAdminBundle:CRUD:base_list_field.html.twig'
+        pager_links:                  'BrueryAdminBundle:Pager:links.html.twig'
+        pager_results:                'BrueryAdminBundle:Pager:results.html.twig'
+        tab_menu_template:            'SonataAdminBundle:Core:tab_menu_template.html.twig'
+        knp_menu_template:            'BrueryAdminBundle:Menu:sonata_menu.html.twig'
+
+    assets:
+        stylesheets:
+            # The sandbox includes default pre-optimized version of some css and js
+            # So you can either use them, and add your custom assets here
+            #   ~ or ~
+            # tweak the assetic.yml and the following lines
+            - assetic/sonata_admin_css.css
+            - assetic/sonata_formatter_css.css
+            - assetic/sonata_jqueryui_css.css
+            - bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+
+
+        javascripts:
+            - assetic/sonata_admin_js.js
+            - assetic/sonata_jqueryui_js.js
+            - assetic/sonata_formatter_js.js
+            - bundles/sonataformatter/vendor/ckeditor/ckeditor.js
+
+#    extensions:
+#        app.admin.extension.user:
+#            admins:
+#                - sonata.user.admin.user
+
+    admin_services:
+        #override admin templates
+        sonata.user.admin.user:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    list:                     'BrueryUserBundle:CRUD:list.html.twig'
+                    outer_list_rows_mosaic:   'BrueryUserBundle:CRUD:list_outer_rows_mosaic_user.html.twig'
+
+        sonata.user.admin.group:
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    outer_list_rows_mosaic:   'BrueryUserBundle:CRUD:list_outer_rows_mosaic_group.html.twig'
+
+        sonata.classification.admin.category:
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    list:                     'BrueryClassificationBundle:CategoryAdmin:list.html.twig'
+                    outer_list_rows_mosaic:   'BrueryClassificationBundle:CategoryAdmin:list_outer_rows_mosaic.html.twig'
+
+        sonata.classification.admin.collection:
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    #Tabbed Version
+                    #list:                     'BrueryClassificationBundle:CollectionAdmin:list.html.twig'
+                    #Side menu version
+                    list:                     'BrueryClassificationBundle:CollectionAdmin:list_alt.html.twig'
+                    outer_list_rows_mosaic:   'BrueryClassificationBundle:CollectionAdmin:list_outer_rows_mosaic.html.twig'
+
+        sonata.classification.admin.tag:
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    #Tabbed Version
+                    #list:                     'BrueryClassificationBundle:TagAdmin:list.html.twig'
+                    #Side menu version
+                    list:                     'BrueryClassificationBundle:TagAdmin:list_alt.html.twig'
+                    outer_list_rows_mosaic:   'BrueryClassificationBundle:TagAdmin:list_outer_rows_mosaic.html.twig'
+
+        sonata.classification.admin.context:
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    outer_list_rows_mosaic:   'BrueryClassificationBundle:ContextAdmin:list_outer_rows_mosaic.html.twig'
+
+        sonata.media.admin.media:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    list:                     'BrueryMediaBundle:MediaAdmin:list.html.twig'
+                    edit:                     'BrueryMediaBundle:MediaAdmin:edit.html.twig'
+                    outer_list_rows_mosaic:   'BrueryMediaBundle:MediaAdmin:list_outer_rows_mosaic.html.twig'
+                    # required override of BrueryMediaBundle
+                    inner_list_row:           'SonataAdminBundle:CRUD:list_inner_row.html.twig'
+                    base_list_field:          'BrueryAdminBundle:CRUD:base_list_field.html.twig'
+
+        sonata.media.admin.gallery:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    #Tabbed Version
+                    #list:                     'BrueryMediaBundle:GalleryAdmin:list.html.twig'
+                    #Side menu version
+                    list:                     'BrueryMediaBundle:GalleryAdmin:list_alt.html.twig'
+                    outer_list_rows_mosaic:   'BrueryMediaBundle:GalleryAdmin:list_outer_rows_mosaic.html.twig'
+
+        sonata.page.admin.block:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    outer_list_rows_mosaic:   'BrueryPageBundle:BlockAdmin:list_outer_rows_mosaic.html.twig'
+
+        sonata.page.admin.shared_block:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    outer_list_rows_mosaic:   'BrueryPageBundle:BlockAdmin:list_outer_rows_mosaic.html.twig'
+
+        bruery.timeline.admin.timeline:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    outer_list_rows_mosaic:   'BrueryTimelineBundle:TimelineAdmin:list_outer_rows_mosaic.html.twig'
+
+
+##############################################################################
+# Sonata Doctrine ORM
+# sonata doctrine ORM bundle configuration
+##############################################################################
+sonata_doctrine_orm_admin:
+    templates:
+      form:
+        - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+      filter:
+        - BrueryDoctrineORMAdminBundle:Form:filter_admin_fields.html.twig
+      types:
+        list:
+          string:   'BrueryAdminBundle:CRUD:list_string.html.twig'
+
+##############################################################################
+# Sonata Doctrine MongoDB
+##############################################################################
+# sonata doctrine MongoDB bundle configuration
+#sonata_doctrine_mongo_db_admin:
+
+##############################################################################
+# Bruery Admin
+##############################################################################
+bruery_admin:
+  options:
+    use_footable: true
+  pool:
+    base_admin_class: Bruery\AdminBundle\Admin\Pool
+

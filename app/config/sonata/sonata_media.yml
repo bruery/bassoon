@@ -1,0 +1,244 @@
+##############################################################################
+# Sonata Media
+# more information can be found here https://sonata-project.org/bundles/media
+##############################################################################
+sonata_media:
+    class:
+        media:             AppBundle\Entity\Media\Media
+        gallery:           AppBundle\Entity\Media\Gallery
+        gallery_has_media: AppBundle\Entity\Media\GalleryHasMedia
+        category:          AppBundle\Entity\Classification\Category
+
+    db_driver:       doctrine_orm # | doctrine_mongodb
+    default_context: default
+    contexts:
+        default:  # the default context is mandatory
+            download:
+                mode: http # X-Sendfile | http
+            providers:
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+                - sonata.media.provider.vimeo
+
+            formats:
+                small: { width: 100, quality: 100}
+                big:   { width: 970 , quality: 100}
+
+        news:
+            providers:
+                - sonata.media.provider.image
+                - sonata.media.provider.dailymotion
+                - sonata.media.provider.youtube
+                - sonata.media.provider.image
+                - sonata.media.provider.vimeo
+
+            formats:
+                abstract: { width: 100, quality: 100}
+                wide:     { width: 820, quality: 100}
+
+        sonata_collection:
+            providers:
+              - sonata.media.provider.image
+
+            formats:
+                preview: { width: 100, quality: 100}
+                wide:    { width: 820, quality: 100}
+
+        sonata_category:
+            providers:
+              - sonata.media.provider.image
+
+            formats:
+                preview: { width: 100, quality: 100}
+                wide:    { width: 820, quality: 100}
+
+    cdn:
+        # define the public base url for the uploaded media
+        server:
+            path:      %sonata_media.cdn.host%
+
+    filesystem:
+        # define where the uploaded file will be stored
+        local:
+            directory:  %kernel.root_dir%/../web/uploads/media
+            create:     true
+
+    providers:
+        # ...
+        file:
+            # the resizer must be set to false, otherwhise this can delete icon files from the fs
+            resizer:    false
+            allowed_extensions: ['pdf', 'txt', 'rtf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pttx', 'odt', 'odg', 'odp', 'ods', 'odc', 'odf', 'odb', 'csv', 'xml', 'zip']
+            allowed_mime_types:
+              - 'application/pdf'
+              - 'application/x-pdf'
+              - 'application/rtf'
+              - 'text/html'
+              - 'text/rtf'
+              - 'text/plain'
+              - 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+              - 'application/vnd.openxmlformats-officedocument.spreadsheetml.template'
+              - 'application/vnd.openxmlformats-officedocument.presentationml.template'
+              - 'application/vnd.openxmlformats-officedocument.presentationml.slideshow'
+              - 'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+              - 'application/vnd.openxmlformats-officedocument.presentationml.slide'
+              - 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+              - 'application/vnd.openxmlformats-officedocument.wordprocessingml.template'
+              - 'application/vnd.ms-excel.addin.macroEnabled.12'
+              - 'application/vnd.ms-excel.sheet.binary.macroEnabled.12'
+              - 'application/zip'
+
+        image:
+           thumbnail: sonata.media.thumbnail.format          # default value
+        vimeo:
+            thumbnail: sonata.media.thumbnail.format          # default value
+        youtube:
+            thumbnail: sonata.media.thumbnail.format          # default value
+        dailymotion:
+            thumbnail: sonata.media.thumbnail.format          # default value
+
+
+    pixlr:
+        enabled:  true
+        referrer: Demo - Sonata Project
+
+    resizer:
+        simple:
+            mode:  inset
+
+##############################################################################
+# Media Doctrine
+# Enable Doctrine to map the provided entities
+##############################################################################
+doctrine:
+    orm:
+        entity_managers:
+            default:
+                mappings:
+                    SonataMediaBundle: ~
+                    BrueryMediaBundle: ~
+
+
+
+##############################################################################
+# Bruery Media
+##############################################################################
+bruery_media:
+  #==================================================================
+  # DEFAULT VALUE -- OLNY REQUIRED IF TOP BUNDLE IS NOT APPBUNDLE
+  #==================================================================
+
+  #class:
+  #    media:               AppBundle\Entity\Media\Media
+  #    gallery:             AppBundle\Entity\Media\Gallery
+  #    gallery_has_media:   AppBundle\Entity\Media\GalleryHasMedia
+  #    collection:          AppBundle\Entity\Classification\Collection
+
+  #==================================================================
+  # Entity Manager
+  #==================================================================
+  manager_class:
+    orm:
+      media:   'Bruery\MediaBundle\Entity\MediaManager'
+      gallery: 'Bruery\MediaBundle\Entity\GalleryManager'
+
+  #==================================================================
+  # Admin
+  #==================================================================
+  admin:
+    media:
+      class:        'Bruery\MediaBundle\Admin\ORM\MediaAdmin'
+      controller:   'BrueryMediaBundle:MediaAdmin'
+      translation:  'SonataMediaBundle'
+
+    gallery:
+      class:        'Bruery\MediaBundle\Admin\ORM\GalleryAdmin'
+      controller:   'BrueryMediaBundle:GalleryAdmin'
+      translation:  'SonataMediaBundle'
+
+    gallery_has_media:
+      class:        'Bruery\MediaBundle\Admin\ORM\GalleryHasMediaAdmin'
+      controller:   'SonataAdminBundle:CRUD'
+      translation:  'SonataMediaBundle'
+
+  #=====================================================================
+  # Bundle Default Settings
+  #=====================================================================
+  settings:
+    media:
+      default_context: ~
+      hide_context: ~
+      default_category: ~
+    gallery:
+        default_context: gallery
+        default_collection: featured-gallery
+    gallery_has_media:
+      media:
+        default_context: news
+        hide_context: false
+        default_category: blog
+
+  #==================================================================
+  # Providers Configuration
+  #==================================================================
+  providers:
+    #----------------------------------------------------------------------------------------
+    # Providers and Pool class override - SAMPLE with default classes
+    #----------------------------------------------------------------------------------------
+    #class:
+    #  pool:
+    #    gallery:            'Bruery\MediaBundle\Provider\Gallery\Pool'
+    #    gallery_has_media:  'Bruery\MediaBundle\Provider\GalleryHasMedia\Pool'
+    #  default_provider:
+    #    gallery:            'Bruery\MediaBundle\Provider\Gallery\DefaultProvider'
+    #    gallery_has_media:  'Bruery\MediaBundle\Provider\GalleryHasMedia\DefaultProvider'
+
+    #----------------------------------------------------------------------------------------
+    # Provider by context definition
+    #----------------------------------------------------------------------------------------
+    gallery:
+      collections:
+          #----------------------------------------------------------------------------------------
+          # SAMPLE COLLECTION SETTINGS
+          #   1. Below is a sample settings for the default provider bruery.news.post.provider.default.
+          #   2. You can declare your own settings based on your provider requirements by following
+          #      the "params" pattern of key -> value
+          #----------------------------------------------------------------------------------------
+          #featured-gallery:
+          #  gallery:
+          #    provider: bruery.media.gallery_provider.default
+          #  gallery_has_media:
+          #    provider: ~
+          #    settings:
+          #      media:
+          #        params:
+          #          - { key: context, value: default }
+          #          - { key: hide_context, value: true }
+          #          - { key: category, value: default }
+          default:
+            gallery:
+              provider: bruery.media.gallery_provider.default
+            gallery_has_media:
+              provider: bruery.media.gallery_has_media_provider.default
+              settings:
+                media:
+                  params:
+                    - { key: context, value: default }
+                    - { key: hide_context, value: true }
+                    - { key: category, value: default }
+
+
+  #==================================================================
+  # Blocks
+  #==================================================================
+  blocks:
+    media:
+      # Override Class
+      #class: Bruery\MediaBundle\Block\MediaBlockService
+      # Block Templates
+      templates:
+        media_block:
+          name: Default
+          path: BrueryMediaBundle:Block:media.html.twig

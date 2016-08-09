@@ -1,0 +1,85 @@
+##############################################################################
+# Sonata Block
+##############################################################################
+sonata_block:
+    #context_manager: sonata.page.block.context_manager
+    #default_contexts: [sonata_page_bundle]
+    default_contexts: [cms]
+
+    http_cache:
+        listener: true
+
+    menus:
+        "AppBundle:Builder:mainMenu": "Main Menu"
+
+    blocks:
+        #=====================================================================
+        # Admin Block
+        #=====================================================================
+        sonata.admin.block.stats:
+            contexts:   [admin]
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+        sonata.admin.block.search_result:
+            contexts:   [admin]
+        sonata.admin_doctrine_orm.block.audit:
+            contexts:   [admin]
+
+        #=====================================================================
+        # Builtin Block
+        #=====================================================================
+        sonata.block.service.text:
+            templates:
+                - { name: 'Sample', template: 'BrueryBlockBundle:Block:block_core_text.html.twig' }
+        sonata.block.service.container:
+        sonata.block.service.rss:
+        sonata.block.service.menu:
+        sonata.block.service.template:
+        bruery.block.service.github_rss:
+            contexts:   [admin]
+
+        #=====================================================================
+        # MediaBundle's Blocks
+        #=====================================================================
+        bruery.media.block.media:
+        sonata.media.block.gallery:
+        sonata.media.block.feature_media:
+
+        #=====================================================================
+        # TimelineBundle's Blocks
+        #=====================================================================
+        sonata.timeline.block.timeline:
+            contexts:   [admin]
+
+        #=====================================================================
+        # UserBundle's Blocks
+        #=====================================================================
+        sonata.user.block.account:
+            cache: sonata.page.cache.js_async
+            #cache: sonata.page.cache.esi
+            contexts: [user]
+        sonata.user.block.menu:
+            contexts: [user]
+        bruery.user.block.user_authentication_logs:
+            contexts: [admin]
+        bruery.user.block.user_authentication_logs_stats:
+            contexts: [admin]
+        bruery.user.block.profile_gender:
+            contexts: [admin]
+        bruery.user.block.profile_age_demographics:
+            contexts: [admin]
+
+        #=====================================================================
+        # Formatter Blocks
+        #=====================================================================
+        sonata.formatter.block.formatter:
+
+##############################################################################
+# Block Doctrine
+##############################################################################
+doctrine:
+    orm:
+        entity_managers:
+            default:
+                mappings:
+                    SonataBlockBundle: ~
