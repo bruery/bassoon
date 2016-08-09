@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "b114bc908fe649f571fb32441cd3a08a7735afdc"
+                "reference": "5d4f2838b2529592a37eeab744282617fadd1933"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/b114bc908fe649f571fb32441cd3a08a7735afdc",
-                "reference": "b114bc908fe649f571fb32441cd3a08a7735afdc",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/5d4f2838b2529592a37eeab744282617fadd1933",
+                "reference": "5d4f2838b2529592a37eeab744282617fadd1933",
                 "shasum": ""
             },
             "require": {
@@ -236,7 +236,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-09 02:19:42"
+            "time": "2016-08-09 06:33:38"
         },
         {
             "name": "cocur/slugify",

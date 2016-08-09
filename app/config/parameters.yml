@@ -21,7 +21,7 @@ parameters:
     mailer_password: null
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
-    sonata_admin.title: 'Bassoon'
+    sonata_admin.title: Bassoon
     sonata_admin.logo_title: /bundles/brueryadmin/images/bruery-logo2.png
     sonata_media.cdn.host: 'http://bassoon.bruery.io//uploads/media'
     sonata_user.google_authenticator.server: demo.sonata-project.org
