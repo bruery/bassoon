@@ -6,6 +6,18 @@
                 <source>title_audit_log</source>
                 <target>Audit Logs</target>
             </trans-unit>
+            <trans-unit id="bruery_powered_by">
+                <source>bruery_powered_by</source>
+                <target>Powered By:</target>
+            </trans-unit>
+            <trans-unit id="bruery_link">
+                <source>bruery_link</source>
+                <target>https://github.com/bruery</target>
+            </trans-unit>
+            <trans-unit id="bruery_name">
+                <source>bruery_name</source>
+                <target>The Bruery</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
