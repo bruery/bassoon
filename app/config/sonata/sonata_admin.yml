@@ -45,17 +45,8 @@ sonata_admin:
                 roles:    [ROLE_SUPER_ADMIN]
                 settings:
                     template: 'BrueryBlockBundle:Block:block_dashboard_text.html.twig'
-                    content:  'Welcome to Montage Admin! Montage is an open source content management platform based on Sonata Project!'
-#            -
-#                class:    col-lg-6 col-xs-6
-#                position: top
-#                type:     sonata.admin.block.stats
-#                settings:
-#                    code: sonata.news.admin.comment
-#                    icon: fa-comments
-#                    text: Open Comment
-#                    filters:
-#                        status: { type: 3, value: 0 } # 3 => NumberType::TYPE_EQUAL
+                    content:  'Welcome to Bassoon! A sandbox for Bruery Platform!'
+
             - { position: left,   type: bruery.user.block.user_authentication_logs, settings: { title: block_title_user_authentication_logs }}
             - { position: left, type: bruery.block.service.github_rss, settings: { title: block_title_github_rss, url: https://github.com/organizations/brueryproject/rmzamora.private.atom?token=AAVXu0IQNmkaG91564ZaqmBTFL8Wii2tks61qryhwA== , template: BrueryBlockBundle:Block:block_github_rss_dashboard.html.twig, number: 5 }}
             - { position: center,   type: bruery.user.block.profile_gender, settings: { title: block_title_profile_gender }}
