@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "855fb8f821c5f43365de534f23ea7c5b",
-    "content-hash": "794f64e7d50488a5eb12a64a70a6f272",
+    "hash": "a43e042dccd20d6cd1feac314ed77533",
+    "content-hash": "15f8dd66a6ac2e524df5f3fd6fcbb7b2",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "5d4f2838b2529592a37eeab744282617fadd1933"
+                "reference": "b7cd1eef926b8c1ed6789ee1bbdd398594f22b21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/5d4f2838b2529592a37eeab744282617fadd1933",
-                "reference": "5d4f2838b2529592a37eeab744282617fadd1933",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/b7cd1eef926b8c1ed6789ee1bbdd398594f22b21",
+                "reference": "b7cd1eef926b8c1ed6789ee1bbdd398594f22b21",
                 "shasum": ""
             },
             "require": {
@@ -236,7 +236,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-09 06:33:38"
+            "time": "2016-08-09 07:32:33"
         },
         {
             "name": "cocur/slugify",

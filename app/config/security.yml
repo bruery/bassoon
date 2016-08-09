@@ -44,29 +44,12 @@ security:
                 use_forward:    false
                 check_path:     /admin/login_check
                 failure_path:   null
+                always_use_default_target_path: false
+                default_target_path: /admin/dashboard
             logout:
                 path:           /admin/logout
                 target:         /admin/login
             anonymous:    true
-
-#        oauth_token:
-#            pattern:    ^/oauth/v2/token
-#            security:   false
-
-#        oauth_authorize:
-#            pattern:    ^/oauth/v2/auth
-#            context:        user
-#            stateless: true
-#            anonymous: true
-            # Add your favorite authentication process here
-
-#        api:
-#            pattern:   /api/(.*)
-#            context:    user
-#            fos_oauth:  true
-#            stateless:  true
-#            anonymous:  true
-            #anonymous:  true # note that anonymous access is now enabled
 
         # This firewall is used to handle the public login area
         # This part is handled by the FOS User Bundle

@@ -4,7 +4,7 @@ A sandbox implementation of [Bruery Platform]( http://bruery.github.io/platform)
 
 ## Documentation
 
-Check out the documentation on the bundles [wiki page](https://github.com/bruery/platform/wiki).
+Check out the documentation on the bundles [wiki page](https://github.com/bruery/bassoon/wiki).
 
 ## Support
 
