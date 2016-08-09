@@ -2,7 +2,7 @@
 
 namespace AppBundle\Admin\Classification;
 
-use Rz\ClassificationBundle\Admin\ContextAdmin as BaseContextAdmin;
+use Bruery\ClassificationBundle\Admin\ContextAdmin as BaseContextAdmin;
 
 class ContextAdmin extends BaseContextAdmin
 {

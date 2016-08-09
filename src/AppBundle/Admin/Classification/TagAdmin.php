@@ -2,7 +2,7 @@
 
 namespace AppBundle\Admin\Classification;
 
-use Rz\ClassificationBundle\Admin\TagAdmin as BaseTagAdmin;
+use Bruery\ClassificationBundle\Admin\TagAdmin as BaseTagAdmin;
 
 class TagAdmin extends BaseTagAdmin
 {

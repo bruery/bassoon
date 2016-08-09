@@ -2,7 +2,7 @@
 
 namespace AppBundle\Admin\User\Entity;
 
-use Rz\UserBundle\Admin\Entity\UserAdmin as BaseUserAdmin;
+use Bruery\UserBundle\Admin\Entity\UserAdmin as BaseUserAdmin;
 use FOS\UserBundle\Model\UserManagerInterface;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;

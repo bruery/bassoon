@@ -2,7 +2,7 @@
 
 namespace AppBundle\Admin\Classification;
 
-use Rz\ClassificationBundle\Admin\CollectionAdmin as BaseCollectionAdmin;
+use Bruery\ClassificationBundle\Admin\CollectionAdmin as BaseCollectionAdmin;
 
 class CollectionAdmin extends BaseCollectionAdmin
 {

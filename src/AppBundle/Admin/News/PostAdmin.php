@@ -2,7 +2,7 @@
 
 namespace AppBundle\Admin\News;
 
-use Rz\NewsPageBundle\Admin\PostAdmin as Admin;
+use Bruery\NewsPageBundle\Admin\PostAdmin as Admin;
 
 class PostAdmin extends Admin
 {

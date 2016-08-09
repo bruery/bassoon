@@ -10,7 +10,7 @@
 
 namespace AppBundle\Document\News;
 
-use Rz\NewsBundle\Document\BasePost;
+use Bruery\NewsBundle\Document\BasePost;
 
 class Post extends BasePost
 {

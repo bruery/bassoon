@@ -49,8 +49,6 @@ class AppKernel extends Kernel
             // SONATA FEATURE
             new FOS\UserBundle\FOSUserBundle(),
             new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
-            new Sonata\PageBundle\SonataPageBundle(),
-            new Sonata\NewsBundle\SonataNewsBundle(),
             new Sonata\MediaBundle\SonataMediaBundle(),
 
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
@@ -64,19 +62,14 @@ class AppKernel extends Kernel
 
             // SONATA BUNDLES
             new JMS\SerializerBundle\JMSSerializerBundle($this),
-            new FOS\CommentBundle\FOSCommentBundle(),
-            new Sonata\CommentBundle\SonataCommentBundle(),
 
             // SONATA FOUNDATION
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\IntlBundle\SonataIntlBundle(),
             new Sonata\FormatterBundle\SonataFormatterBundle(),
-            new Sonata\CacheBundle\SonataCacheBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
-            new Sonata\SeoBundle\SonataSeoBundle(),
             new Sonata\ClassificationBundle\SonataClassificationBundle(),
-            new Sonata\NotificationBundle\SonataNotificationBundle(),
             new Sonata\DatagridBundle\SonataDatagridBundle(),
 
             // CMF Integration
@@ -87,21 +80,10 @@ class AppKernel extends Kernel
             new Bruery\CoreBundle\BrueryCoreBundle(),
             new Bruery\UserBundle\BrueryUserBundle(),
             new Bruery\DoctrineORMAdminBundle\BrueryDoctrineORMAdminBundle(),
-            #new Bruery\DemoBundle\BrueryDemoBundle(),
             new Bruery\ClassificationBundle\BrueryClassificationBundle(),
-            new Bruery\NewsBundle\BrueryNewsBundle(),
             new Bruery\MediaBundle\BrueryMediaBundle(),
-            new Bruery\CommentBundle\BrueryCommentBundle(),
-            new Bruery\PageBundle\BrueryPageBundle(),
-            new Bruery\SeoBundle\BruerySeoBundle(),
             new Bruery\BlockBundle\BrueryBlockBundle(),
-            new Bruery\RedirectBundle\BrueryRedirectBundle(),
             new Bruery\FormatterBundle\BrueryFormatterBundle(),
-            new Bruery\CategoryPageBundle\BrueryCategoryPageBundle(),
-            new Bruery\NewsPageBundle\BrueryNewsPageBundle(),
-            new Bruery\AdvancePageBundle\BrueryAdvancePageBundle(),
-            new Bruery\GoogleAPIClientBundle\BrueryGoogleAPIClientBundle(),
-            new Bruery\SearchBundle\BruerySearchBundle(),
             new Bruery\UserSecurityBundle\BrueryUserSecurityBundle(),
 
             // Disable this if you don't want the timeline in the admin
@@ -109,27 +91,8 @@ class AppKernel extends Kernel
             new Sonata\TimelineBundle\SonataTimelineBundle(),
             new Bruery\TimelineBundle\BrueryTimelineBundle(),
 
-            new WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle(),
-            //new PHPMentors\WorkflowerBundle\PHPMentorsWorkflowerBundle(),
-
-            //SSO Server for API
-            //new Mosaic\SsoBundle\MosaicSsoBundle(),
-            new FOS\OAuthServerBundle\FOSOAuthServerBundle(),
-            new Bruery\OAuthServerBundle\BrueryOAuthServerBundle(),
-
             new AppBundle\AppBundle(),
-            new App\TimelineBundle\AppTimelineBundle(),
-            new Bruery\CoreBundle\BrueryCoreBundle(),
-            new Bruery\DoctrineORMAdminBundle\BrueryDoctrineORMAdminBundle(),
-            new Bruery\AdminBundle\BrueryAdminBundle(),
-            new Bruery\BlockBundle\BrueryBlockBundle(),
-            new Bruery\ClassificationBundle\BrueryClassificationBundle(),
-            new Bruery\MediaBundle\BrueryMediaBundle(),
-            new Bruery\FormatterBundle\BrueryFormatterBundle(),
-            new Bruery\EntityAuditBundle\BrueryEntityAuditBundle(),
-            new Bruery\TimelineBundle\BrueryTimelineBundle(),
-            new Bruery\UserBundle\BrueryUserBundle(),
-            new Bruery\UserSecurityBundle\BrueryUserSecurityBundle(),
+            new App\TimelineBundle\AppTimelineBundle()
 
         );
 

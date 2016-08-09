@@ -26,8 +26,8 @@ parameters:
     secret:             ThisTokenIsNotSoSecretChangeIt
 
     # Sonata Admin Options
-    sonata_admin.title:             Sonata Project
-    sonata_admin.logo_title:        /bundles/sonataadmin/logo_title.png
+    sonata_admin.title:             'The Bruery Bassoon'
+    sonata_admin.logo_title:        /bundles/brueryuser/img/default-email/logo.png
 
     # Sonata Media options
     sonata_media.cdn.host:          http://demo.sonata-project.org/uploads/media

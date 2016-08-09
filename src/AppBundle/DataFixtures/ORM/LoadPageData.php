@@ -95,8 +95,8 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
 
         $formatter->setType('sonata.formatter.block.formatter');
         $formatter->setSetting('format', 'rawhtml');
-        $formatter->setSetting('rawContent', '<div class="pull-right hidden-xs"><b>Version</b> 2.0.0</div><strong>Copyright © 2015-2016 <a href="http://rzproject.github.io">RzProject</a>.</strong> All rights reserved.');
-        $formatter->setSetting('content', '<div class=\"pull-right hidden-xs\"><b>Version<\/b> 2.0.0<\/div><strong>Copyright \u00a9 2015-2016 <a href=\"http:\/\/rzproject.github.io\">RzProject<\/a>.<\/strong> All rights reserved.');
+        $formatter->setSetting('rawContent', '<div class="pull-right hidden-xs"><b>Version</b> 2.0.0</div><strong>Copyright © 2015-2016 <a href="http://rzproject.github.io">BrueryProject</a>.</strong> All rights reserved.');
+        $formatter->setSetting('content', '<div class=\"pull-right hidden-xs\"><b>Version<\/b> 2.0.0<\/div><strong>Copyright \u00a9 2015-2016 <a href=\"http:\/\/rzproject.github.io\">BrueryProject<\/a>.<\/strong> All rights reserved.');
         $formatter->setSetting('template', 'SonataFormatterBundle:Block:block_formatter.html.twig');
         $formatter->setPosition(1);
         $formatter->setEnabled(true);

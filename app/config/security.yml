@@ -49,9 +49,9 @@ security:
                 target:         /admin/login
             anonymous:    true
 
-        oauth_token:
-            pattern:    ^/oauth/v2/token
-            security:   false
+#        oauth_token:
+#            pattern:    ^/oauth/v2/token
+#            security:   false
 
 #        oauth_authorize:
 #            pattern:    ^/oauth/v2/auth
@@ -60,12 +60,12 @@ security:
 #            anonymous: true
             # Add your favorite authentication process here
 
-        api:
-            pattern:   /api/(.*)
-            context:    user
-            fos_oauth:  true
-            stateless:  true
-            anonymous:  true
+#        api:
+#            pattern:   /api/(.*)
+#            context:    user
+#            fos_oauth:  true
+#            stateless:  true
+#            anonymous:  true
             #anonymous:  true # note that anonymous access is now enabled
 
         # This firewall is used to handle the public login area
@@ -85,7 +85,7 @@ security:
                 # We set invalidate_session to false because we want basket
                 # to be fully persisted even when user logout and login again
                 invalidate_session: false
-                handlers: ['sonata.page.cms_manager_selector']
+                #handlers: ['sonata.page.cms_manager_selector']
             anonymous:    true
 
     access_control:

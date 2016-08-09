@@ -2,8 +2,9 @@
 # Sonata Block
 ##############################################################################
 sonata_block:
-    context_manager: sonata.page.block.context_manager
-    default_contexts: [sonata_page_bundle]
+    #context_manager: sonata.page.block.context_manager
+    #default_contexts: [sonata_page_bundle]
+    default_contexts: [cms]
 
     http_cache:
         listener: true

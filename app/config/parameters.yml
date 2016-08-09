@@ -2,18 +2,18 @@
 parameters:
     default.database.driver: pdo_mysql
     default.database.host: localhost
-    default.database.name: sniffle_gzilt
+    default.database.name: bassoon
     default.database.user: dbuser
     default.database.password: same2you
     audit.database.driver: pdo_mysql
     audit.database.host: localhost
-    audit.database.name: sniffle_gzilt_audit
+    audit.database.name: bassoon_audit
     audit.database.user: dbuser
     audit.database.password: same2you
     timeline.database.password: same2you
     timeline.database.driver: pdo_mysql
     timeline.database.host: localhost
-    timeline.database.name: sniffle_gzilt_timeline
+    timeline.database.name: bassoon_timeline
     timeline.database.user: dbuser
     mailer_transport: smtp
     mailer_host: localhost
@@ -21,9 +21,9 @@ parameters:
     mailer_password: null
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
-    sonata_admin.title: 'Sonata Project'
-    sonata_admin.logo_title: /bundles/sonataadmin/logo_title.png
-    sonata_media.cdn.host: 'http://demo.sonata-project.org/uploads/media'
+    sonata_admin.title: 'Bassoon'
+    sonata_admin.logo_title: /bundles/brueryadmin/images/bruery-logo2.png
+    sonata_media.cdn.host: 'http://bassoon.bruery.io//uploads/media'
     sonata_user.google_authenticator.server: demo.sonata-project.org
     rabbitmq_host: 127.0.0.1
     rabbitmq_user: user
