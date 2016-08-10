@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c8fe5172ecd8d88f49d7da5804771971",
-    "content-hash": "1953ba25c1b90e34b5857704a40b3b94",
+    "hash": "a43e042dccd20d6cd1feac314ed77533",
+    "content-hash": "15f8dd66a6ac2e524df5f3fd6fcbb7b2",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
