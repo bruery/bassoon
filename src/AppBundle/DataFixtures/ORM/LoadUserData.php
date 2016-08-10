@@ -77,7 +77,7 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
             $fname = $faker->unique()->firstNameMale;
             $lname = $faker->unique()->lastName;
             $uname = strtolower(sprintf('%s.%s', $fname, $lname));
-            $email = strtolower(sprintf('%s@%s', $uname, $faker->freeEmailDomain))
+            $email = strtolower(sprintf('%s@%s', $uname, $faker->freeEmailDomain));
 
             $user->setUsername($uname);
             $user->setEmail($email);
@@ -99,7 +99,7 @@ class LoadUserData extends AbstractFixture implements ContainerAwareInterface, O
             $fname = $faker->unique()->firstNameFemale;
             $lname = $faker->unique()->lastName;
             $uname = strtolower(sprintf('%s.%s', $fname, $lname));
-            $email = strtolower(sprintf('%s@%s', $uname, $faker->freeEmailDomain))
+            $email = strtolower(sprintf('%s@%s', $uname, $faker->freeEmailDomain));
 
             $user->setUsername($uname);
             $user->setEmail($email);

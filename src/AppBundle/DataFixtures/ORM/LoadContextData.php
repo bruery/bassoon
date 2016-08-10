@@ -74,14 +74,6 @@ class LoadContextData extends AbstractFixture implements OrderedFixtureInterface
         $this->setReference('context-default', $context);
 
         $context = $contextManager->create();
-        $context->setId('post');
-        $context->setName('Post');
-        $context->setEnabled(true);
-        $contextManager->save($context);
-
-        $this->setReference('context-post', $newsContext);
-
-        $context = $contextManager->create();
         $context->setId('user-age-demographics');
         $context->setName('User Age Demographics');
         $context->setEnabled(true);
@@ -95,14 +87,7 @@ class LoadContextData extends AbstractFixture implements OrderedFixtureInterface
         $context->setEnabled(true);
         $contextManager->save($context);
 
-        $this->setReference('context-gallery', $newsContext);
+        $this->setReference('context-gallery', $context);
 
-        $context = $contextManager->create();
-        $context->setId('post-sets');
-        $context->setName('Post Sets');
-        $context->setEnabled(true);
-        $contextManager->save($context);
-
-        $this->setReference('context-post-sets', $newsContext);
     }
 }

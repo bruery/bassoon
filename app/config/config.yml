@@ -90,6 +90,7 @@ doctrine:
                 host:     "%default.database.host%"
                 password: "%default.database.password%"
                 charset:  UTF8
+                server_version: 5.6
             audit:
                 driver:   "%audit.database.driver%"
                 dbname:   "%audit.database.name%"
@@ -97,6 +98,7 @@ doctrine:
                 host:     "%audit.database.host%"
                 password: "%audit.database.password%"
                 charset:  UTF8
+                server_version: 5.6
             timeline:
                 driver:   "%timeline.database.driver%"
                 dbname:   "%timeline.database.name%"
@@ -104,6 +106,7 @@ doctrine:
                 host:     "%timeline.database.host%"
                 password: "%timeline.database.password%"
                 charset:  UTF8
+                server_version: 5.6
         types:
             json:     Sonata\Doctrine\Types\JsonType
 
