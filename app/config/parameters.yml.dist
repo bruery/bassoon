@@ -2,17 +2,17 @@ parameters:
 
     default.database.driver: pdo_mysql
     default.database.host: localhost
-    default.database.name: sonata_sandbox
+    default.database.name: bassoon_demo
     default.database.user: dbuser
     default.database.password: same2you
     audit.database.driver: pdo_mysql
     audit.database.host: localhost
-    audit.database.name: sonata_sandbox_audit
+    audit.database.name: bassoon_demo_audit
     audit.database.user: dbuser
     audit.database.password: same2you
     timeline.database.driver: pdo_mysql
     timeline.database.host: localhost
-    timeline.database.name: sonata_sandbox_timeline
+    timeline.database.name: bassoon_demo_timeline
     timeline.database.user: dbuser
     timeline.database.password: same2you
 
@@ -27,7 +27,7 @@ parameters:
 
     # Sonata Admin Options
     sonata_admin.title:             'The Bruery Bassoon'
-    sonata_admin.logo_title:        /bundles/brueryuser/img/default-email/logo.png
+    sonata_admin.logo_title:        /bundles/brueryadmin/images/bruery-logo2.png
 
     # Sonata Media options
     sonata_media.cdn.host:          http://demo.sonata-project.org/uploads/media
