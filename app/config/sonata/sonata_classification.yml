@@ -38,11 +38,11 @@ bruery_classification:
   #=====================================================================
   settings:
     category:
-      default_context: 'news' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
+      default_context: 'default' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
     collection:
-      default_context: 'news' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
+      default_context: 'default' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
     tag:
-      default_context: 'news' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
+      default_context: 'default' # NOTE: default context used for grouping tag, media, ckeditor_context, collection
 
   #=====================================================================
   # PROVIDERS Configuration
