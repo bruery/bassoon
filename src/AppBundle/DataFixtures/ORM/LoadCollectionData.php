@@ -60,55 +60,8 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
      */
     public function load(ObjectManager $manager)
     {
-        //POST
-        $collection = $this->getReference('context-post');
-
-        $collection = $this->getCollectionManager()->create();
-        $collection->setName('Article');
-        $collection->setDescription('Article');
-        $collection->setSlug('article');
-        $collection->setEnabled(true);
-        $collection->setContext($context);
-
-        $this->setReference('collection-article', $collection);
-        $this->getCollectionManager()->save($collection);
-
-        $collection = $this->getCollectionManager()->create();
-        $collection->setName('Product');
-        $collection->setDescription('Product');
-        $collection->setSlug('product');
-        $collection->setEnabled(true);
-        $collection->setContext($context);
-
-        $this->setReference('collection-product', $collection);
-        $this->getCollectionManager()->save($collection);
-
-        $collection = $this->getCollectionManager()->create();
-        $collection->setName('Video');
-        $collection->setDescription('Video');
-        $collection->setSlug('video');
-        $collection->setEnabled(true);
-        $collection->setContext($context);
-
-        $this->setReference('collection-video', $collection);
-        $this->getCollectionManager()->save($collection);
-
-        //POST SETS
-        $collection = $this->getReference('context-post-sets');
-
-        $collection = $this->getCollectionManager()->create();
-        $collection->setName('Featured Articles');
-        $collection->setDescription('Featured Articles');
-        $collection->setSlug('featured-articles');
-        $collection->setEnabled(true);
-        $collection->setContext($context);
-
-        $this->setReference('collection-featured-articles', $collection);
-        $this->getCollectionManager()->save($collection);
-
-
         //GALLERY
-        $collection = $this->getReference('context-gallery');
+        $context = $this->getReference('context-gallery');
 
         $collection = $this->getCollectionManager()->create();
         $collection->setName('Featured Gallery');
@@ -122,7 +75,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
 
 
         //USER DEMOGRAPHICS
-        $collection = $this->getReference('context-user-age-demographics');
+        $context = $this->getReference('context-user-age-demographics');
 
         $collection = $this->getCollectionManager()->create();
         $collection->setName('12-17 years old');

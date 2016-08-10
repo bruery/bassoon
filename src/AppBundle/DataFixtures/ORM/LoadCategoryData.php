@@ -70,16 +70,6 @@ class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterfac
         $this->setReference('category-default', $category);
         $this->getCategoryManager()->save($category);
 
-        $context = $this->getReference('context-post');
-        $category = $this->getCategoryManager()->create();
-        $category->setName('Post');
-        $category->setSlug('post');
-        $category->setEnabled(true);
-        $category->setContext($context);
-
-        $this->setReference('category-post', $category);
-        $this->getCategoryManager()->save($category);
-
 
         $context = $this->getReference('context-user-age-demographics');
         $category = $this->getCategoryManager()->create();
@@ -99,17 +89,6 @@ class LoadCategoryData extends AbstractFixture implements OrderedFixtureInterfac
         $category->setContext($context);
 
         $this->setReference('category-gallery', $category);
-        $this->getCategoryManager()->save($category);
-
-
-        $context = $this->getReference('context-post-sets');
-        $category = $this->getCategoryManager()->create();
-        $category->setName('Post Sets');
-        $category->setSlug('post-sets');
-        $category->setEnabled(true);
-        $category->setContext($context);
-
-        $this->setReference('category-post-sets', $category);
         $this->getCategoryManager()->save($category);
 
         $manager->flush();
