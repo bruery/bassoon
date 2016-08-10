@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a43e042dccd20d6cd1feac314ed77533",
-    "content-hash": "15f8dd66a6ac2e524df5f3fd6fcbb7b2",
+    "hash": "c8fe5172ecd8d88f49d7da5804771971",
+    "content-hash": "1953ba25c1b90e34b5857704a40b3b94",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "b7cd1eef926b8c1ed6789ee1bbdd398594f22b21"
+                "reference": "52d003d035a6e9810995ab9484bf927a9ca23a33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/b7cd1eef926b8c1ed6789ee1bbdd398594f22b21",
-                "reference": "b7cd1eef926b8c1ed6789ee1bbdd398594f22b21",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/52d003d035a6e9810995ab9484bf927a9ca23a33",
+                "reference": "52d003d035a6e9810995ab9484bf927a9ca23a33",
                 "shasum": ""
             },
             "require": {
@@ -236,20 +236,20 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-09 07:32:33"
+            "time": "2016-08-09 07:35:52"
         },
         {
             "name": "cocur/slugify",
-            "version": "2.2.x-dev",
+            "version": "2.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cocur/slugify.git",
-                "reference": "13c1d3b2e602822c47a7ac62f9d409e1a2b76113"
+                "reference": "57a00e06a382928e350cc7bbb13b19f1b8f4e73a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cocur/slugify/zipball/13c1d3b2e602822c47a7ac62f9d409e1a2b76113",
-                "reference": "13c1d3b2e602822c47a7ac62f9d409e1a2b76113",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/57a00e06a382928e350cc7bbb13b19f1b8f4e73a",
+                "reference": "57a00e06a382928e350cc7bbb13b19f1b8f4e73a",
                 "shasum": ""
             },
             "require": {
@@ -300,7 +300,7 @@
                 "slug",
                 "slugify"
             ],
-            "time": "2016-07-10 13:06:05"
+            "time": "2016-08-09 20:10:17"
         },
         {
             "name": "doctrine/annotations",
@@ -1592,12 +1592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "5265f16ae0ae9b6acaf7c518063d80b2383a8086"
+                "reference": "35c600da5abb5a6183ae1f594aea2d865974514c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/5265f16ae0ae9b6acaf7c518063d80b2383a8086",
-                "reference": "5265f16ae0ae9b6acaf7c518063d80b2383a8086",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/35c600da5abb5a6183ae1f594aea2d865974514c",
+                "reference": "35c600da5abb5a6183ae1f594aea2d865974514c",
                 "shasum": ""
             },
             "require": {
@@ -1634,7 +1634,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-07-25 09:33:04"
+            "time": "2016-08-09 14:51:36"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -8302,12 +8302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "3a8e045064f294992a13966b6c892fb9d64853a3"
+                "reference": "1dc8bdd49e54b9b936858dd422096f349e367a85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/3a8e045064f294992a13966b6c892fb9d64853a3",
-                "reference": "3a8e045064f294992a13966b6c892fb9d64853a3",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/1dc8bdd49e54b9b936858dd422096f349e367a85",
+                "reference": "1dc8bdd49e54b9b936858dd422096f349e367a85",
                 "shasum": ""
             },
             "require": {
@@ -8320,7 +8320,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -8344,7 +8344,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-03-04 13:27:44"
+            "time": "2016-08-09 15:02:38"
         }
     ],
     "aliases": [],
