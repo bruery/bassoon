@@ -90,6 +90,7 @@ $success = execute_commands(array(
     $bin . ' ./app/console doctrine:schema:update --em=timeline --force',
     $bin . ' ./app/console audit:schema:update',
     $bin . '  -d memory_limit=1024M -d max_execution_time=600 ./app/console doctrine:fixtures:load --verbose --env=dev --no-debug',
+    $bin . ' ./app/console bruery:user:process-user-age-demographics user-age-demographics -n',
     $bin . ' ./app/console assets:install --symlink web',
     $bin . ' ./app/console sonata:admin:setup-acl',
     $bin . '  -d memory_limit=1024M ./app/console sonata:admin:generate-object-acl'
