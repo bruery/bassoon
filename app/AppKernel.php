@@ -60,7 +60,6 @@ class AppKernel extends Kernel
             new FOS\RestBundle\FOSRestBundle(),
             new Nelmio\ApiDocBundle\NelmioApiDocBundle(),
 
-            // SONATA BUNDLES
             new JMS\SerializerBundle\JMSSerializerBundle($this),
 
             // SONATA FOUNDATION
@@ -72,10 +71,9 @@ class AppKernel extends Kernel
             new Sonata\ClassificationBundle\SonataClassificationBundle(),
             new Sonata\DatagridBundle\SonataDatagridBundle(),
 
-            // CMF Integration
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
-
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+
             new Bruery\AdminBundle\BrueryAdminBundle(),
             new Bruery\CoreBundle\BrueryCoreBundle(),
             new Bruery\UserBundle\BrueryUserBundle(),
@@ -95,8 +93,11 @@ class AppKernel extends Kernel
             new Sonata\TimelineBundle\SonataTimelineBundle(),
             new Bruery\TimelineBundle\BrueryTimelineBundle(),
 
-            new AppBundle\AppBundle(),
-            new App\TimelineBundle\AppTimelineBundle()
+            new App\TimelineBundle\AppTimelineBundle(),
+
+            new Snc\RedisBundle\SncRedisBundle(),
+
+            new AppBundle\AppBundle()
 
         );
 

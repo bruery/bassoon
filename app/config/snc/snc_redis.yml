@@ -1,0 +1,24 @@
+snc_redis:
+    clients:
+        default:
+            type: predis
+            alias: default
+            dsn: redis://localhost
+        cache:
+            type: predis
+            alias: cache
+            dsn: redis://localhost/1
+            logging: true
+    doctrine:
+        metadata_cache:
+            client: cache
+            entity_managers: [default, timeline, audit]
+        result_cache:
+            client: cache
+            entity_managers: [default, timeline, audit]
+        query_cache:
+            client: cache
+            entity_managers: [default, timeline, audit]
+        second_level_cache:
+            client: cache
+            entity_managers: [default, timeline, audit]
