@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aafb134b8194ae3bf0b3b77c7b4a1ad8",
-    "content-hash": "65ed4c0d9f4c5d423cefd33ec5b4cefa",
+    "hash": "d7ef38aeaa051038ab35eb2a60a35234",
+    "content-hash": "7f69ea6f490c946aa9b19b7b9bf6af8a",
     "packages": [
         {
             "name": "andres-montanez/magallanes",
@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "edfcc5d378fbca77c3c1f7c27092ae95539dee4d"
+                "reference": "867a99ee9767ffbc029a9245f6e2cf6363938959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/edfcc5d378fbca77c3c1f7c27092ae95539dee4d",
-                "reference": "edfcc5d378fbca77c3c1f7c27092ae95539dee4d",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/867a99ee9767ffbc029a9245f6e2cf6363938959",
+                "reference": "867a99ee9767ffbc029a9245f6e2cf6363938959",
                 "shasum": ""
             },
             "require": {
@@ -183,12 +183,17 @@
                 "friendsofsymfony/oauth-server-bundle": "^1.5",
                 "php": ">=5.3.3",
                 "simplethings/entity-audit-bundle": "~0.8",
+                "snc/redis-bundle": "^2.0",
                 "sonata-project/admin-bundle": "^3.0",
                 "sonata-project/block-bundle": "^3.0",
                 "sonata-project/classification-bundle": "^3.0",
+                "sonata-project/doctrine-extensions": "^1.0",
                 "sonata-project/doctrine-orm-admin-bundle": "^3.0",
+                "sonata-project/easy-extends-bundle": "^2.1",
                 "sonata-project/formatter-bundle": "^3.0",
+                "sonata-project/intl-bundle": "^2.2",
                 "sonata-project/media-bundle": "^3.0",
+                "sonata-project/sonata-composer": "dev-master",
                 "sonata-project/timeline-bundle": "^3.0",
                 "sonata-project/user-bundle": "^3.0",
                 "stof/doctrine-extensions-bundle": "^1.2.2",
@@ -238,7 +243,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-11 01:51:10"
+            "time": "2016-08-11 07:06:15"
         },
         {
             "name": "cocur/slugify",
@@ -8551,10 +8556,6 @@
         "doctrine/migrations": 20,
         "doctrine/data-fixtures": 20,
         "knplabs/knp-menu-bundle": 20,
-        "sonata-project/easy-extends-bundle": 20,
-        "sonata-project/doctrine-extensions": 20,
-        "sonata-project/intl-bundle": 20,
-        "sonata-project/sonata-composer": 20,
         "symfony/phpunit-bridge": 20,
         "behat/common-contexts": 20
     },
