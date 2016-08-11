@@ -71,6 +71,18 @@ security:
                 #handlers: ['sonata.page.cms_manager_selector']
             anonymous:    true
 
+        oauth_token:
+            pattern:    ^/oauth/v2/token
+            security:   false
+
+        api:
+            pattern:   /api/(.*)
+            context:    user
+            fos_oauth:  true
+            stateless:  true
+            anonymous:  true
+            #anonymous:  true # note that anonymous access is now enabled
+
     access_control:
         #- { path: ^/api, roles: [ IS_AUTHENTICATED_FULLY ] }
         # URL of FOSUserBundle which need to be available to anonymous users

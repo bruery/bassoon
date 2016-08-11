@@ -86,6 +86,10 @@ class AppKernel extends Kernel
             new Bruery\FormatterBundle\BrueryFormatterBundle(),
             new Bruery\UserSecurityBundle\BrueryUserSecurityBundle(),
 
+            //OAuth
+            new FOS\OAuthServerBundle\FOSOAuthServerBundle(),
+            new Bruery\OAuthServerBundle\BrueryOAuthServerBundle(),
+
             // Disable this if you don't want the timeline in the admin
             new Spy\TimelineBundle\SpyTimelineBundle(),
             new Sonata\TimelineBundle\SonataTimelineBundle(),
