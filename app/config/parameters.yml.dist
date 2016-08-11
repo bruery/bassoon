@@ -34,12 +34,3 @@ parameters:
 
     # Sonata User Options
     sonata_user.google_authenticator.server:  demo.sonata-project.org
-
-    rabbitmq_host: 127.0.0.1
-    rabbitmq_user: user
-    rabbitmq_pass: pass
-    rabbitmq_port: 5672
-    rabbitmq_vhost: /
-
-    memcache_host: localhost
-    memcache_port: 11211

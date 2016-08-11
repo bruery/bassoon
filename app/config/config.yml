@@ -37,7 +37,8 @@ imports:
     # Bruery
     - { resource: bruery/bruery_oauth_server.yml }
 
-
+    # snc
+    - { resource: snc/snc_redis.yml }
 
 framework:
     #esi:                   ~
