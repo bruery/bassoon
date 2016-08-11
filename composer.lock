@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "867a99ee9767ffbc029a9245f6e2cf6363938959"
+                "reference": "d91dc6a39ef1eebc05effe3353587f62152e7156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/867a99ee9767ffbc029a9245f6e2cf6363938959",
-                "reference": "867a99ee9767ffbc029a9245f6e2cf6363938959",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/d91dc6a39ef1eebc05effe3353587f62152e7156",
+                "reference": "d91dc6a39ef1eebc05effe3353587f62152e7156",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +243,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-11 07:06:15"
+            "time": "2016-08-11 09:19:40"
         },
         {
             "name": "cocur/slugify",
@@ -3960,12 +3960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "de173cd2306f0f789c967fbb7ae103a8934a72f2"
+                "reference": "abf79beb26a399d2451f62520aa6436e6ed05446"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/de173cd2306f0f789c967fbb7ae103a8934a72f2",
-                "reference": "de173cd2306f0f789c967fbb7ae103a8934a72f2",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/abf79beb26a399d2451f62520aa6436e6ed05446",
+                "reference": "abf79beb26a399d2451f62520aa6436e6ed05446",
                 "shasum": ""
             },
             "require": {
@@ -4049,7 +4049,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2016-08-10 17:34:37"
+            "time": "2016-08-11 07:54:54"
         },
         {
             "name": "sonata-project/block-bundle",

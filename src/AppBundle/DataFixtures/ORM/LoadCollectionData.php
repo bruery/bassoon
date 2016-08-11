@@ -82,6 +82,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setDescription('12-17 years old');
         $collection->setSlug('12-17-years-old');
         $collection->setEnabled(true);
+        $collection->setSettings(array('min'=>12, 'max'=>17));
         $collection->setContext($context);
 
         $this->setReference('collection-12-17-years-old', $collection);
@@ -91,6 +92,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('18-24 years old');
         $collection->setDescription('18-24 years old');
         $collection->setSlug('18-24-years-old');
+        $collection->setSettings(array('min'=>18, 'max'=>24));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
@@ -101,6 +103,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('25-34 years old');
         $collection->setDescription('25-34 years old');
         $collection->setSlug('25-34-years-old');
+        $collection->setSettings(array('min'=>25, 'max'=>34));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
@@ -111,6 +114,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('35-44 years old');
         $collection->setDescription('35-44 years old');
         $collection->setSlug('35-44-years-old');
+        $collection->setSettings(array('min'=>35, 'max'=>44));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
@@ -121,6 +125,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('45-54 years old');
         $collection->setDescription('45-54 years old');
         $collection->setSlug('45-54-years-old');
+        $collection->setSettings(array('min'=>45, 'max'=>54));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
@@ -131,6 +136,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('55-64 years old');
         $collection->setDescription('55-64 years old');
         $collection->setSlug('55-64-years-old');
+        $collection->setSettings(array('min'=>55, 'max'=>64));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
@@ -141,6 +147,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('65-74 years old');
         $collection->setDescription('65-74 years old');
         $collection->setSlug('65-74-years-old');
+        $collection->setSettings(array('min'=>65, 'max'=>74));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
@@ -151,6 +158,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('Under 12 years old');
         $collection->setDescription('Under 12 years old');
         $collection->setSlug('under-12-years-old');
+        $collection->setSettings(array('min'=>'', 'max'=>12));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
@@ -161,6 +169,7 @@ class LoadCollectionData extends AbstractFixture implements OrderedFixtureInterf
         $collection->setName('75 years or older');
         $collection->setDescription('75 years or older');
         $collection->setSlug('75-years-or-older');
+        $collection->setSettings(array('min'=>75, 'max'=>''));
         $collection->setEnabled(true);
         $collection->setContext($context);
 
