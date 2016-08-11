@@ -1,6 +1,6 @@
 {
   "name": "The Bruery",
   "tagline": "Bassoon",
-  "body": "# The Bruery - Bassoon\r\n\r\nA sandbox implementation of [Bruery Platform]( http://bruery.github.io/platform).\r\n\r\n## Documentation\r\n\r\nCheck out the documentation on the bundles [wiki page](https://github.com/bruery/platform/wiki).\r\n\r\n## Support\r\n\r\nFor general support and questions, please use [Disqus](https://disqus.com/home/channel/thebruery/discussion/channel-thebruery/bug_reporting).\r\n\r\nIf you think you find a bug or you have a feature idea to propose, feel free to open a issue\r\n**after looking** at the [contributing guide](CONTRIBUTING.md).\r\n\r\n## License\r\n\r\nThis package is available under the [MIT license](LICENSE).",
+  "body": "# The Bruery - Bassoon\r\n\r\nA sandbox implementation of [Bruery Platform]( http://bruery.github.io/platform).\r\n\r\n## Documentation\r\n\r\nCheck out the documentation on the bundles [wiki page](https://github.com/bruery/bassoon/wiki).\r\n\r\n## Support\r\n\r\nFor general support and questions, please use [Disqus](https://disqus.com/home/channel/thebruery/discussion/channel-thebruery/bug_reporting).\r\n\r\nIf you think you find a bug or you have a feature idea to propose, feel free to open a issue\r\n**after looking** at the [contributing guide](CONTRIBUTING.md).\r\n\r\n## License\r\n\r\nThis package is available under the [MIT license](LICENSE).",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
