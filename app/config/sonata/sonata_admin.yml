@@ -81,6 +81,14 @@ sonata_admin:
                 items:
                     - { label: 'Timeline', route: 'admin_app_timeline_timeline_timeline', admin: 'bruery.timeline.admin.timeline'}
 
+            sonata.admin.group.api:
+                label: main_menu_api
+                label_catalogue: BrueryOAuthServerBundle
+                icon:  '<i class="fa fa-fw fa-exchange"></i>'
+                items:
+                    - bruery.oauth_server.admin.access_token
+                    - bruery.oauth_server.admin.client
+
     templates:
         user_block:                   'SonataUserBundle:Admin\Core:user_block.html.twig'
         add_block:                    'SonataAdminBundle:Core:add_block.html.twig'
@@ -253,6 +261,23 @@ sonata_admin:
                 view:
                     outer_list_rows_mosaic:   'BrueryTimelineBundle:TimelineAdmin:list_outer_rows_mosaic.html.twig'
 
+        bruery.oauth_server.admin.access_token:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    outer_list_rows_mosaic:   'BrueryOAuthServerBundle:AccessTokenAdmin:list_outer_rows_mosaic.html.twig'
+
+        bruery.oauth_server.admin.client:
+            pager_type:  simple
+            templates:
+                # required form override of BrueryDoctrineORMAdminBundle
+                form:
+                  - 'BrueryDoctrineORMAdminBundle:Form:form_admin_fields.html.twig'
+                view:
+                    outer_list_rows_mosaic:   'BrueryOAuthServerBundle:ClientAdmin:list_outer_rows_mosaic.html.twig'
 
 ##############################################################################
 # Sonata Doctrine ORM
