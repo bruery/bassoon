@@ -12,7 +12,7 @@
         name="AppBundle\Entity\Classification\Tag"
         table="classification__tag"
         repository-class="Doctrine\ORM\EntityRepository">
-
+        <cache usage="READ_ONLY" region="classification__tag_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

@@ -12,7 +12,7 @@
         name="AppBundle\Entity\Classification\Category"
         table="classification__category"
         repository-class="Doctrine\ORM\EntityRepository">
-
+        <cache usage="READ_ONLY" region="classification__category_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

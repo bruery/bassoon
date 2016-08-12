@@ -10,7 +10,9 @@
     -->
     <entity
         name="AppBundle\Entity\OAuthServer\RefreshToken"
-        table="oauth_server__refresh_token">
+        table="oauth_server__refresh_token"
+        repository-class="Doctrine\ORM\EntityRepository">
+        <cache usage="READ_ONLY" region="oauth_server__refresh_token_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

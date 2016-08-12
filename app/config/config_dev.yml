@@ -51,7 +51,6 @@ doctrine:
     orm:
         auto_generate_proxy_classes: %kernel.debug%
         default_entity_manager: default
-
         entity_managers:
             default:
                 metadata_cache_driver: redis
@@ -59,6 +58,6 @@ doctrine:
                 result_cache_driver: redis
                 second_level_cache:
                   region_cache_driver:
-                    type:           memcache
+                    type:           redis
                   enabled:              true
                   log_enabled:          true

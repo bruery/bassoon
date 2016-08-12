@@ -10,7 +10,9 @@
     -->
     <entity
         name="AppBundle\Entity\OAuthServer\AuthCode"
-        table="oauth_server__auth_code">
+        table="oauth_server__auth_code"
+        repository-class="Doctrine\ORM\EntityRepository">
+        <cache usage="READ_ONLY" region="oauth_server__access_token_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>
