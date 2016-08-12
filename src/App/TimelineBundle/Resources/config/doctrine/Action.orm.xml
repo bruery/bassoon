@@ -12,7 +12,7 @@
         name="App\TimelineBundle\Entity\Action"
         table="timeline__action"
         repository-class="Doctrine\ORM\EntityRepository">
-
+        <cache usage="READ_ONLY" region="timeline__action_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "d91dc6a39ef1eebc05effe3353587f62152e7156"
+                "reference": "c55867a4a54a10d473b24c095d98f3aa46e02c0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/d91dc6a39ef1eebc05effe3353587f62152e7156",
-                "reference": "d91dc6a39ef1eebc05effe3353587f62152e7156",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/c55867a4a54a10d473b24c095d98f3aa46e02c0d",
+                "reference": "c55867a4a54a10d473b24c095d98f3aa46e02c0d",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +243,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-11 09:19:40"
+            "time": "2016-08-12 05:31:02"
         },
         {
             "name": "cocur/slugify",
@@ -4466,12 +4466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "f7e221df45a4d3170eb3f1acafb2c0559b8443ac"
+                "reference": "6c5cb1f619f6bd3ce9a9a72baae04b70b190916e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/f7e221df45a4d3170eb3f1acafb2c0559b8443ac",
-                "reference": "f7e221df45a4d3170eb3f1acafb2c0559b8443ac",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/6c5cb1f619f6bd3ce9a9a72baae04b70b190916e",
+                "reference": "6c5cb1f619f6bd3ce9a9a72baae04b70b190916e",
                 "shasum": ""
             },
             "require": {
@@ -4537,7 +4537,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2016-07-29 16:30:14"
+            "time": "2016-08-11 11:03:02"
         },
         {
             "name": "sonata-project/easy-extends-bundle",
@@ -8504,12 +8504,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "6853c68727010ed251036a9813e0d48675cd00a0"
+                "reference": "61e225b1e1084b7a0e5a51ad8eafd4c0bf16307a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/6853c68727010ed251036a9813e0d48675cd00a0",
-                "reference": "6853c68727010ed251036a9813e0d48675cd00a0",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/61e225b1e1084b7a0e5a51ad8eafd4c0bf16307a",
+                "reference": "61e225b1e1084b7a0e5a51ad8eafd4c0bf16307a",
                 "shasum": ""
             },
             "require": {
@@ -8546,7 +8546,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2016-08-10 13:38:24"
+            "time": "2016-08-11 10:52:21"
         }
     ],
     "aliases": [],

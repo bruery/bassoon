@@ -7,6 +7,7 @@
     <entity name="AppBundle\Entity\User\User"
             table="fos_user_user"
             repository-class="Doctrine\ORM\EntityRepository">
+        <cache usage="READ_ONLY" region="fos_user_user_region" />
         <id name="id" column="id" type="integer">
             <generator strategy="AUTO" />
         </id>
