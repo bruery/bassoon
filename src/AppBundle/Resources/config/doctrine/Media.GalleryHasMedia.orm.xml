@@ -12,7 +12,6 @@
         name="AppBundle\Entity\Media\GalleryHasMedia"
         table="media__gallery_media"
         repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="media__gallery_media_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

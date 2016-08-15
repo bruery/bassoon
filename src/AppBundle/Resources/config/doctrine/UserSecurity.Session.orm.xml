@@ -7,7 +7,6 @@
     <entity name="AppBundle\Entity\UserSecurity\Session"
             table="fos_user_user_security_session"
             repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="fos_user_user_security_session_region" />
         <id name="id" column="id" type="integer">
             <generator strategy="AUTO" />
         </id>

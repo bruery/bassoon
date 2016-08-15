@@ -7,7 +7,6 @@
     <entity name="AppBundle\Entity\User\UserAuthenticationLogs"
             table="fos_user_user_authentication_logs"
             repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="fos_user_user_authentication_logs_region" />
         <id name="id" column="id" type="integer">
             <generator strategy="AUTO" />
         </id>

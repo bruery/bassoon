@@ -12,7 +12,6 @@
         name="App\TimelineBundle\Entity\Component"
         table="timeline__component"
         repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="timeline__component_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

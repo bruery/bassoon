@@ -7,7 +7,6 @@
     <entity name="AppBundle\Entity\User\Group"
             table="fos_user_group"
             repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="fos_user_group_region" />
         <id name="id" column="id" type="integer">
             <generator strategy="AUTO" />
         </id>
