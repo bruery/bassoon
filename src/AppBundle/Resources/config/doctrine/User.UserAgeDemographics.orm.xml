@@ -7,7 +7,6 @@
     <entity name="AppBundle\Entity\User\UserAgeDemographics"
             table="fos_user_user_age_demographics"
             repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="fos_user_user_age_demographics_region" />
         <id name="id" column="id" type="integer">
             <generator strategy="AUTO" />
         </id>

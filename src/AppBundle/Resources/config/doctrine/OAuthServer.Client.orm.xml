@@ -12,7 +12,6 @@
         name="AppBundle\Entity\OAuthServer\Client"
         table="oauth_server__client"
         repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="oauth_server__client_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

@@ -12,7 +12,6 @@
         name="AppBundle\Entity\Classification\Collection"
         table="classification__collection"
         repository-class="Doctrine\ORM\EntityRepository">
-        <cache usage="READ_ONLY" region="classification__collection_region" />
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

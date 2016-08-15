@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "c55867a4a54a10d473b24c095d98f3aa46e02c0d"
+                "reference": "fcff47f6b5298b4269e7377a6ad3286cec974ca6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/c55867a4a54a10d473b24c095d98f3aa46e02c0d",
-                "reference": "c55867a4a54a10d473b24c095d98f3aa46e02c0d",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/fcff47f6b5298b4269e7377a6ad3286cec974ca6",
+                "reference": "fcff47f6b5298b4269e7377a6ad3286cec974ca6",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +243,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-12 05:31:02"
+            "time": "2016-08-15 05:55:13"
         },
         {
             "name": "cocur/slugify",
@@ -1663,12 +1663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "5195070d513e9cf8721c83c70b0faa63a213de9e"
+                "reference": "113cc4e48fac19d20fc039cfecae9b41103be706"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/5195070d513e9cf8721c83c70b0faa63a213de9e",
-                "reference": "5195070d513e9cf8721c83c70b0faa63a213de9e",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/113cc4e48fac19d20fc039cfecae9b41103be706",
+                "reference": "113cc4e48fac19d20fc039cfecae9b41103be706",
                 "shasum": ""
             },
             "require": {
@@ -1721,7 +1721,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2016-07-29 08:47:59"
+            "time": "2016-08-12 09:53:32"
         },
         {
             "name": "fzaninotto/faker",
@@ -1729,12 +1729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "35c600da5abb5a6183ae1f594aea2d865974514c"
+                "reference": "a1dd85c38f033c895f120e4b346cd737098e7c4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/35c600da5abb5a6183ae1f594aea2d865974514c",
-                "reference": "35c600da5abb5a6183ae1f594aea2d865974514c",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/a1dd85c38f033c895f120e4b346cd737098e7c4a",
+                "reference": "a1dd85c38f033c895f120e4b346cd737098e7c4a",
                 "shasum": ""
             },
             "require": {
@@ -1771,7 +1771,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2016-08-09 14:51:36"
+            "time": "2016-08-12 07:13:09"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -2146,12 +2146,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/serializer.git",
-                "reference": "6b6c30aa3a1d3cf6a12f2a70a6024fcb583086b7"
+                "reference": "8c18b3ab56d231f3a7e0b9737275e9dffe02e784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/6b6c30aa3a1d3cf6a12f2a70a6024fcb583086b7",
-                "reference": "6b6c30aa3a1d3cf6a12f2a70a6024fcb583086b7",
+                "url": "https://api.github.com/repos/schmittjoh/serializer/zipball/8c18b3ab56d231f3a7e0b9737275e9dffe02e784",
+                "reference": "8c18b3ab56d231f3a7e0b9737275e9dffe02e784",
                 "shasum": ""
             },
             "require": {
@@ -2168,7 +2168,7 @@
             },
             "require-dev": {
                 "doctrine/orm": "~2.1",
-                "doctrine/phpcr-odm": "^1.3",
+                "doctrine/phpcr-odm": "^1.3|^2.0",
                 "jackalope/jackalope-doctrine-dbal": "^1.1.5",
                 "phpunit/phpunit": "^4.8|^5.0",
                 "propel/propel1": "~1.7",
@@ -2212,7 +2212,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2016-08-04 08:44:31"
+            "time": "2016-08-14 11:47:27"
         },
         {
             "name": "jms/serializer-bundle",
@@ -3960,12 +3960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "abf79beb26a399d2451f62520aa6436e6ed05446"
+                "reference": "4cecdf5626fb570fe67c34d9062fa2d18351d35c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/abf79beb26a399d2451f62520aa6436e6ed05446",
-                "reference": "abf79beb26a399d2451f62520aa6436e6ed05446",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/4cecdf5626fb570fe67c34d9062fa2d18351d35c",
+                "reference": "4cecdf5626fb570fe67c34d9062fa2d18351d35c",
                 "shasum": ""
             },
             "require": {
@@ -4049,7 +4049,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2016-08-11 07:54:54"
+            "time": "2016-08-12 09:05:51"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -4057,12 +4057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataBlockBundle.git",
-                "reference": "3ed4132829048fc7257bc0c27b32e0463c9365da"
+                "reference": "afa6eadff12cfe47f672870a08209028d3198d9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/3ed4132829048fc7257bc0c27b32e0463c9365da",
-                "reference": "3ed4132829048fc7257bc0c27b32e0463c9365da",
+                "url": "https://api.github.com/repos/sonata-project/SonataBlockBundle/zipball/afa6eadff12cfe47f672870a08209028d3198d9c",
+                "reference": "afa6eadff12cfe47f672870a08209028d3198d9c",
                 "shasum": ""
             },
             "require": {
@@ -4121,7 +4121,7 @@
                 "block",
                 "sonata"
             ],
-            "time": "2016-07-28 20:06:47"
+            "time": "2016-08-12 19:08:22"
         },
         {
             "name": "sonata-project/cache",
@@ -4466,12 +4466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "6c5cb1f619f6bd3ce9a9a72baae04b70b190916e"
+                "reference": "0cfd9a096c87256f41726dc4fd708cda91f907c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/6c5cb1f619f6bd3ce9a9a72baae04b70b190916e",
-                "reference": "6c5cb1f619f6bd3ce9a9a72baae04b70b190916e",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/0cfd9a096c87256f41726dc4fd708cda91f907c7",
+                "reference": "0cfd9a096c87256f41726dc4fd708cda91f907c7",
                 "shasum": ""
             },
             "require": {
@@ -4537,7 +4537,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2016-08-11 11:03:02"
+            "time": "2016-08-12 08:49:13"
         },
         {
             "name": "sonata-project/easy-extends-bundle",
@@ -4607,12 +4607,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter.git",
-                "reference": "48905105792aa2bfbea234b6a9d6a168ff8c19fd"
+                "reference": "0f642e1a69bfaff667ad6befa90c45e4d7144633"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/48905105792aa2bfbea234b6a9d6a168ff8c19fd",
-                "reference": "48905105792aa2bfbea234b6a9d6a168ff8c19fd",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/0f642e1a69bfaff667ad6befa90c45e4d7144633",
+                "reference": "0f642e1a69bfaff667ad6befa90c45e4d7144633",
                 "shasum": ""
             },
             "require": {
@@ -4668,7 +4668,7 @@
                 "export",
                 "xls"
             ],
-            "time": "2016-08-01 08:13:04"
+            "time": "2016-08-12 08:50:12"
         },
         {
             "name": "sonata-project/formatter-bundle",
@@ -6865,12 +6865,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/ZendDiagnostics.git",
-                "reference": "292653c287a9e9d811417d4cb8a0025a4c1894cf"
+                "reference": "5bc397654ef8267bdfd6cc832cc82fcaf4b3534c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDiagnostics/zipball/292653c287a9e9d811417d4cb8a0025a4c1894cf",
-                "reference": "292653c287a9e9d811417d4cb8a0025a4c1894cf",
+                "url": "https://api.github.com/repos/zendframework/ZendDiagnostics/zipball/5bc397654ef8267bdfd6cc832cc82fcaf4b3534c",
+                "reference": "5bc397654ef8267bdfd6cc832cc82fcaf4b3534c",
                 "shasum": ""
             },
             "require": {
@@ -6920,7 +6920,7 @@
                 "php",
                 "test"
             ],
-            "time": "2016-04-01 10:39:00"
+            "time": "2016-08-12 11:48:42"
         }
     ],
     "packages-dev": [
