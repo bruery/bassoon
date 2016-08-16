@@ -21,12 +21,12 @@ sonata_admin:
     title:      %sonata_admin.title%
     title_logo: %sonata_admin.logo_title%
     options:
-        html5_validate: false # does not use html5 validation
-        pager_links:    5        # pager max links to display
-        use_bootlint:   %kernel.debug%
-        use_select2:    true
-        use_icheck:     true
-        use_stickyforms:      true
+        html5_validate:   false # does not use html5 validation
+        pager_links:      5        # pager max links to display
+        use_bootlint:     %kernel.debug%
+        use_select2:      true
+        use_icheck:       true
+        use_stickyforms:  true
 
     dashboard:
         blocks:
@@ -90,7 +90,7 @@ sonata_admin:
                     - bruery.oauth_server.admin.client
 
     templates:
-        user_block:                   'SonataUserBundle:Admin\Core:user_block.html.twig'
+        user_block:                   'BrueryUserBundle:Admin\Core:user_block.html.twig'
         add_block:                    'SonataAdminBundle:Core:add_block.html.twig'
         layout:                       'BrueryAdminBundle::standard_layout.html.twig'
         ajax:                         'SonataAdminBundle::ajax_layout.html.twig'
@@ -304,8 +304,8 @@ sonata_doctrine_orm_admin:
 ##############################################################################
 bruery_admin:
   options:
-    use_footable: true
-    skin: 'skin-purple'
+    use_footable:      true
+    skin:             'skin-black'
+    sidebar_collapse: true
   pool:
     base_admin_class: Bruery\AdminBundle\Admin\Pool
-

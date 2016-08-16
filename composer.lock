@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "1cc52fd5e284cb4f9ad5e19fa457e7bc02717651"
+                "reference": "16fcc5e868749e697d5c9b4ac22610984b3cf701"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/1cc52fd5e284cb4f9ad5e19fa457e7bc02717651",
-                "reference": "1cc52fd5e284cb4f9ad5e19fa457e7bc02717651",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/16fcc5e868749e697d5c9b4ac22610984b3cf701",
+                "reference": "16fcc5e868749e697d5c9b4ac22610984b3cf701",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +243,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-16 05:56:01"
+            "time": "2016-08-16 07:44:05"
         },
         {
             "name": "cocur/slugify",
@@ -3960,12 +3960,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "99e2dc95451ffa3e45459d3a02e851ba7911604e"
+                "reference": "3980b11555f2c2c2e1fde10e9435f08490973996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/99e2dc95451ffa3e45459d3a02e851ba7911604e",
-                "reference": "99e2dc95451ffa3e45459d3a02e851ba7911604e",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/3980b11555f2c2c2e1fde10e9435f08490973996",
+                "reference": "3980b11555f2c2c2e1fde10e9435f08490973996",
                 "shasum": ""
             },
             "require": {
@@ -4049,7 +4049,7 @@
                 "bootstrap",
                 "sonata"
             ],
-            "time": "2016-08-15 11:26:45"
+            "time": "2016-08-16 07:41:13"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -4275,22 +4275,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "5b06f65ee7d6aa145821b51465b115dd2775a8c5"
+                "reference": "5224529b7f11d10169d46034fc0e67b0c6609e77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/5b06f65ee7d6aa145821b51465b115dd2775a8c5",
-                "reference": "5b06f65ee7d6aa145821b51465b115dd2775a8c5",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/5224529b7f11d10169d46034fc0e67b0c6609e77",
+                "reference": "5224529b7f11d10169d46034fc0e67b0c6609e77",
                 "shasum": ""
             },
             "require": {
                 "cocur/slugify": "^1.4 || ^2.0",
                 "php": "^5.3 || ^7.0",
                 "symfony/config": "^2.3 || ^3.0",
-                "symfony/form": "^2.3 || ^3.0",
+                "symfony/form": "^2.3.5 || ^3.0",
                 "symfony/http-foundation": "^2.3 || ^3.0",
                 "symfony/property-access": "^2.3 || ^3.0",
                 "symfony/translation": "^2.3 || ^3.0",
+                "symfony/twig-bridge": "^2.3.5 || ^3.0",
                 "symfony/validator": "^2.3 || ^3.0",
                 "twig/twig": "^1.23"
             },
@@ -4341,7 +4342,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2016-08-07 11:22:30"
+            "time": "2016-08-16 07:26:39"
         },
         {
             "name": "sonata-project/datagrid-bundle",
@@ -4466,12 +4467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataDoctrineORMAdminBundle.git",
-                "reference": "9d3d464a120782a3b0c3082a44888ee677ff11d1"
+                "reference": "b6d9a60b0650539f85af893c04e7b2fa59040be5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/9d3d464a120782a3b0c3082a44888ee677ff11d1",
-                "reference": "9d3d464a120782a3b0c3082a44888ee677ff11d1",
+                "url": "https://api.github.com/repos/sonata-project/SonataDoctrineORMAdminBundle/zipball/b6d9a60b0650539f85af893c04e7b2fa59040be5",
+                "reference": "b6d9a60b0650539f85af893c04e7b2fa59040be5",
                 "shasum": ""
             },
             "require": {
@@ -4537,7 +4538,7 @@
                 "generator",
                 "sonata"
             ],
-            "time": "2016-08-15 16:07:23"
+            "time": "2016-08-16 07:37:49"
         },
         {
             "name": "sonata-project/easy-extends-bundle",
