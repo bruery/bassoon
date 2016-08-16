@@ -75,7 +75,7 @@ assetic:
                 - %kernel.root_dir%/../web/bundles/bruerycore/vendor/footable-bootstrap/js/footable-app.min.js
                 - %kernel.root_dir%/../web/bundles/bruerycore/vendor/responsive-mobilemenu/rmm-js/responsivemobilemenu.js
                 - %kernel.root_dir%/../web/bundles/bruerycore/vendor/auxiliary-rpage/responsive-paginate.js
-                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+                - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/admin-lte/dist/js/app.js
                 - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/iCheck/icheck.min.js
                 - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.js
                 - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.js
@@ -95,7 +95,7 @@ assetic:
                 - %kernel.root_dir%/../web/bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
                 - %kernel.root_dir%/../web/bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
                 - %kernel.root_dir%/../web/bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
-                - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.css
+                - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/admin-lte/dist/css/AdminLTE.css
                 - %kernel.root_dir%/../web/bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
                 - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/jqueryui/themes/bootstrap/jquery-ui-1.10.3.custom.css
                 - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/jqueryui/themes/bootstrap/jquery-ui-1.10.3.theme.css
