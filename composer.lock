@@ -169,12 +169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "16fcc5e868749e697d5c9b4ac22610984b3cf701"
+                "reference": "fc570707c0dbd3ad0fe916e7f08b81fa91f0641d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/16fcc5e868749e697d5c9b4ac22610984b3cf701",
-                "reference": "16fcc5e868749e697d5c9b4ac22610984b3cf701",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/fc570707c0dbd3ad0fe916e7f08b81fa91f0641d",
+                "reference": "fc570707c0dbd3ad0fe916e7f08b81fa91f0641d",
                 "shasum": ""
             },
             "require": {
@@ -243,7 +243,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2016-08-16 07:44:05"
+            "time": "2016-08-16 08:52:38"
         },
         {
             "name": "cocur/slugify",
@@ -4546,12 +4546,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataEasyExtendsBundle.git",
-                "reference": "3ccde277e0cd6f30a2842927a1b4260600267918"
+                "reference": "5989f2d01fda940e3c52d6e9e64b0ef38ce93962"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataEasyExtendsBundle/zipball/3ccde277e0cd6f30a2842927a1b4260600267918",
-                "reference": "3ccde277e0cd6f30a2842927a1b4260600267918",
+                "url": "https://api.github.com/repos/sonata-project/SonataEasyExtendsBundle/zipball/5989f2d01fda940e3c52d6e9e64b0ef38ce93962",
+                "reference": "5989f2d01fda940e3c52d6e9e64b0ef38ce93962",
                 "shasum": ""
             },
             "require": {
@@ -4600,7 +4600,7 @@
                 "Easy Extends",
                 "sonata"
             ],
-            "time": "2016-08-15 11:17:18"
+            "time": "2016-08-16 22:08:50"
         },
         {
             "name": "sonata-project/exporter",
@@ -4888,12 +4888,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "be33b6b3fbf296e418547f8e6a5b9bb470b8c031"
+                "reference": "a1d684de89f04f790728aa49a7d05001c8d87411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/be33b6b3fbf296e418547f8e6a5b9bb470b8c031",
-                "reference": "be33b6b3fbf296e418547f8e6a5b9bb470b8c031",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/a1d684de89f04f790728aa49a7d05001c8d87411",
+                "reference": "a1d684de89f04f790728aa49a7d05001c8d87411",
                 "shasum": ""
             },
             "require": {
@@ -4992,7 +4992,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2016-08-15 21:20:26"
+            "time": "2016-08-16 22:27:56"
         },
         {
             "name": "sonata-project/notification-bundle",
