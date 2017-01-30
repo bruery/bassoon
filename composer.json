@@ -41,7 +41,7 @@
         "knplabs/knp-menu-bundle": "dev-master",
         "knplabs/knp-paginator-bundle": "~2.3",
 
-        "bruery/platform" : "^1.0",
+        "bruery/platform" : "1.0.*",
 
         "michelf/php-markdown": "~1.4",
         "willdurand/faker-bundle": "~1.0",
