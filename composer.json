@@ -14,10 +14,10 @@
 
         "php": ">=5.3.3",
 
-        "twig/twig": "~1.20|~2.0",
+        "twig/twig": "^1.24",
         "twig/extensions": "~1.0",
 
-        "symfony/symfony":  "2.8.9",
+        "symfony/symfony":  "2.8.16",
         "symfony/assetic-bundle": "^2.8",
         "symfony/swiftmailer-bundle": "^2.3",
         "symfony/monolog-bundle": "^2.8",
@@ -41,7 +41,7 @@
         "knplabs/knp-menu-bundle": "dev-master",
         "knplabs/knp-paginator-bundle": "~2.3",
 
-        "bruery/platform" : "1.0.*",
+        "bruery/platform" : "1.0.x-dev",
 
         "michelf/php-markdown": "~1.4",
         "willdurand/faker-bundle": "~1.0",
