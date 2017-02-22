@@ -1,0 +1,24 @@
+knp_doctrine_behaviors:
+    blameable:      false
+    geocodable:     false     # Here null is converted to false
+    loggable:       false
+    sluggable:      false
+    soft_deletable: false
+    translatable:    true
+
+#stof_doctrine_extensions:
+#    default_locale: en_US
+#    orm:
+#        default:
+#            translatable: true
+
+sonata_translation:
+    locales: [en, fr, it]
+    default_locale: en
+    # here enable the types you need
+    gedmo:
+        enabled: true
+    knplabs:
+        enabled: true
+    #phpcr:
+    #    enabled: true
