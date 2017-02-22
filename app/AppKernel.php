@@ -45,6 +45,7 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Knp\DoctrineBehaviors\Bundle\DoctrineBehaviorsBundle(),
 
             // SONATA FEATURE
             new FOS\UserBundle\FOSUserBundle(),
@@ -70,6 +71,9 @@ class AppKernel extends Kernel
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\ClassificationBundle\SonataClassificationBundle(),
             new Sonata\DatagridBundle\SonataDatagridBundle(),
+            new Sonata\TranslationBundle\SonataTranslationBundle(),
+
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
 
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),

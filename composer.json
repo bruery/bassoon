@@ -14,16 +14,16 @@
 
         "php": ">=5.3.3",
 
-        "twig/twig": "^1.24",
+        "twig/twig": "~1.20|~2.0",
         "twig/extensions": "~1.0",
 
-        "symfony/symfony":  "2.8.16",
+        "symfony/symfony":  "2.8.9",
         "symfony/assetic-bundle": "^2.8",
         "symfony/swiftmailer-bundle": "^2.3",
         "symfony/monolog-bundle": "^2.8",
 
         "sensio/distribution-bundle": "~4.0",
-        "sensio/framework-extra-bundle": "^3.0.2",
+        "sensio/framework-extra-bundle": "~2.3",
 
         "friendsofsymfony/rest-bundle": "1.7.*",
 
@@ -40,8 +40,10 @@
         "knplabs/gaufrette": "~0.1.6",
         "knplabs/knp-menu-bundle": "dev-master",
         "knplabs/knp-paginator-bundle": "~2.3",
+        "knplabs/doctrine-behaviors": "~1.1",
 
-        "bruery/platform" : "1.0.x-dev",
+        "bruery/platform" : "^1.0",
+        "sonata-project/translation-bundle": "^2.0",
 
         "michelf/php-markdown": "~1.4",
         "willdurand/faker-bundle": "~1.0",
@@ -100,7 +102,6 @@
     "config": {
         "bin-dir": "bin"
     },
-
     "extra": {
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",

@@ -112,6 +112,7 @@ assetic:
                 - %kernel.root_dir%/../web/bundles/brueryadmin/css/theme/bruery/style.css
                 - %kernel.root_dir%/../web/bundles/brueryadmin/css/theme/bruery/themes.css
                 - %kernel.root_dir%/../web/bundles/brueryadmin/vendor/blockui/css/jquery.blockUI.css
+                - %kernel.root_dir%/../web/bundles/sonatatranslation/css/sonata-translation.css
 
             filters:
                 - cssrewrite
