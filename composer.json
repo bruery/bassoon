@@ -40,6 +40,7 @@
         "knplabs/gaufrette": "~0.1.6",
         "knplabs/knp-menu-bundle": "dev-master",
         "knplabs/knp-paginator-bundle": "~2.3",
+        "knplabs/doctrine-behaviors": "~1.1",
 
         "bruery/platform" : "1.0.x-dev",
         "sonata-project/formatter-bundle": "3.1.0",
@@ -53,6 +54,7 @@
         "sonata-project/notification-bundle": "3.1.0",
         "sonata-project/timeline-bundle": "3.1.0",
         "sonata-project/user-bundle": "3.2.1",
+        "sonata-project/translation-bundle" : "2.1.0",
 
         "michelf/php-markdown": "~1.4",
         "willdurand/faker-bundle": "~1.0",
