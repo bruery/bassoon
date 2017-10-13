@@ -118,12 +118,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bruery/platform.git",
-                "reference": "074aedf514398940b73cfcf963dad303a00badeb"
+                "reference": "5052ef4d396fd834e4d4abb8c3ea4f1282dbc0a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bruery/platform/zipball/074aedf514398940b73cfcf963dad303a00badeb",
-                "reference": "074aedf514398940b73cfcf963dad303a00badeb",
+                "url": "https://api.github.com/repos/bruery/platform/zipball/5052ef4d396fd834e4d4abb8c3ea4f1282dbc0a2",
+                "reference": "5052ef4d396fd834e4d4abb8c3ea4f1282dbc0a2",
                 "shasum": ""
             },
             "require": {
@@ -167,7 +167,7 @@
                 "Symfony2",
                 "platform"
             ],
-            "time": "2017-02-01T04:37:52+00:00"
+            "time": "2017-10-13T03:44:54+00:00"
         },
         {
             "name": "bruery/platform-core",
